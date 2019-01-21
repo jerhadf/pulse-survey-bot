@@ -84,6 +84,38 @@ class Web_Functions():
         return web_surveys
 
     @staticmethod
+    def save_survey_stats(survey): 
+        ''' 
+        Saves the passed survey bot_stats to a JSON file 
+        arg survey -- the .text value for a WebElement item 
+        ''' 
+
+        survey_text = survey.split("\n")
+        survey_points = survey_text[0]
+        survey_name = survey_text[2]
+        survey_respondents = survey_text[3]
+        survey_questions = survey_text[-2]
+        survey_time = survey_text[-1]
+
+        print(f"*** ANSWERING SURVEY: {survey_name}, {survey_points} points ***")
+
+        # write these stats to a file to keep track
+        with open('tests\pulse_bot_stats.json', 'r') as fp:
+            bot_stats = json.load(fp)
+        
+        bot_stats["Total_Points_Accumulated"] += int(survey_points)
+        bot_stats["Surveys_Completed"].append({
+            "name" : survey_name, 
+            "points" : survey_points, 
+            "respondents" : survey_respondents, 
+            "questions" : survey_questions,
+            "expected_time" : survey_time
+        })
+            
+        with open('tests\pulse_bot_stats.json', 'w') as fp:
+            json.dump(bot_stats, fp, indent=2)
+
+    @staticmethod
     def generate_answers(num_answers): 
         ''' Returns an array of answers '''
         driver = Web_Functions.open_site_new_session("https://randomwordgenerator.com/sentence.php")
@@ -129,13 +161,15 @@ class Web_Functions():
         input_boxes, answer_boxes, num_boxes, check_boxes = [], [], [], []
 
         # find all the types of answer inputs 
-        if Web_Functions.wait_until_element_appears(driver, "mc-option", By.CLASS_NAME, wait_time=1): 
+        time.sleep(1)
+        if Web_Functions.wait_until_element_appears(driver, "mc-option", By.CLASS_NAME, wait_time=2): 
             input_boxes = driver.find_elements_by_class_name("mc-option")
-        elif Web_Functions.wait_until_element_appears(driver, "answer-box", By.ID, wait_time=1): 
+        elif Web_Functions.wait_until_element_appears(driver, "answer-box", By.ID, wait_time=2): 
             answer_boxes = driver.find_elements_by_id("answer-box")
-        elif Web_Functions.wait_until_element_appears(driver, ".option-box.multi", By.CSS_SELECTOR, wait_time=1): 
+        #! Check boxes will never be populated because it is always reached after mc-option
+        elif Web_Functions.wait_until_element_appears(driver, ".option-box.multi", By.CSS_SELECTOR, wait_time=2): 
             check_boxes = driver.find_elements_by_css_selector(".option-box.multi")
-        elif Web_Functions.wait_until_element_appears(driver, "numeric-input-box", By.ID, wait_time=1): 
+        elif Web_Functions.wait_until_element_appears(driver, "numeric-input-box", By.ID, wait_time=2): 
             num_boxes = driver.find_elements_by_id("numeric-input-box")
 
         print(f"# OPTION BOXES: {len(input_boxes)} # ANSWER BOXES: {len(answer_boxes)} # CHECK BOXES: {len(check_boxes)} # NUM BOXES: {len(num_boxes)}")

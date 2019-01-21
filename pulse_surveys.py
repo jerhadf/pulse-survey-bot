@@ -25,12 +25,11 @@ while surveys_completed < num_surveys:
     # find all available web surveys
     web_surveys = Web_Functions.find_available_web_surveys(driver)
 
-    # open the first web survey available 
+    # open the first web survey available, save its stats
     curr_survey = web_surveys[0] 
     curr_survey.click()
-    survey_text = curr_survey.text.split()
-    print(f"*** ANSWERING SURVEY ***:\n{survey_text}")
-    
+    Web_Functions.save_survey_stats(curr_survey.text)
+
     # verify that highlighted question appears
     Web_Functions.wait_until_element_appears(driver, "question-button-highlighted")
 
@@ -51,7 +50,7 @@ while surveys_completed < num_surveys:
     try: 
         submit_button.click()
     except StaleElementReferenceException: 
-        print("StaleElement exception caught, trying to click survey submit button")
+        print("StaleElement exception caught, clicking survey submit button")
     finally: 
         Web_Functions.wait_until_element_appears(driver, 'survey-submit-button')
         final_submit_btn = driver.find_element_by_class_name("survey-submit-button")
@@ -62,4 +61,14 @@ while surveys_completed < num_surveys:
     # find the take new survey button and click it to return to surveys page 
     Web_Functions.wait_until_element_appears(driver, "//*[contains(text(), 'Take A Survey')]", find_type = By.XPATH)
     take_new_survey_btn = driver.find_element_by_xpath("//*[contains(text(), 'Take A Survey')]")
-    take_new_survey_btn.click()
+    try: 
+        print(f"Take a Survey Button Text: {take_new_survey_btn.text}")
+    except AttributeError: 
+        print(f"AttributeError caught! Trying to click survey complete button another way")
+        Web_Functions.wait_until_element_appears(driver, ".survey-complete-button.small", find_type = By.CSS_SELECTOR)
+        small_complete_btns = driver.find_elements_by_css_selector(".survey-complete-button.small")
+        small_complete_btns[1].click()
+    else: 
+        take_new_survey_btn.click()
+
+    time.sleep(8)
