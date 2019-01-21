@@ -44,12 +44,17 @@ class Web_Functions():
 
     @staticmethod 
     def wait_until_element_appears(driver, element, find_type = By.CLASS_NAME, wait_time = 10): 
-        ''' Wait specified time until a specified element appears in the browser ''' 
+        ''' 
+        Wait specified time until a specified element appears in the browser 
+        If element appears, return True; else, return False 
+        ''' 
         try:
             WebDriverWait(driver, wait_time).until(
                 EC.presence_of_element_located((find_type, element)))
         except TimeoutException:
             print(f"Page timed out after {wait_time}, element '{element}' not found")
+            return False
+        return True 
 
     @staticmethod
     def open_rewards_page(driver): 
@@ -115,18 +120,23 @@ class Web_Functions():
 
         # scroll to top of window 
         driver.execute_script("scrollBy(0,250);")
-        time.sleep(2)
         question.click()
         
         # print out the current question 
         question_text = driver.find_element_by_class_name("question-text").text
         print(f"... Answering question:\n {question_text} ...")
 
+        input_boxes, answer_boxes, num_boxes, check_boxes = [], [], [], []
+
         # find all the types of answer inputs 
-        input_boxes = driver.find_elements_by_class_name("mc-option")
-        answer_boxes = driver.find_elements_by_id("answer-box")
-        check_boxes = driver.find_elements_by_css_selector(".option-box.multi")
-        num_boxes = driver.find_elements_by_id("numeric-input-box")
+        if Web_Functions.wait_until_element_appears(driver, "mc-option", By.CLASS_NAME, wait_time=1): 
+            input_boxes = driver.find_elements_by_class_name("mc-option")
+        elif Web_Functions.wait_until_element_appears(driver, "answer-box", By.ID, wait_time=1): 
+            answer_boxes = driver.find_elements_by_id("answer-box")
+        elif Web_Functions.wait_until_element_appears(driver, ".option-box.multi", By.CSS_SELECTOR, wait_time=1): 
+            check_boxes = driver.find_elements_by_css_selector(".option-box.multi")
+        elif Web_Functions.wait_until_element_appears(driver, "numeric-input-box", By.ID, wait_time=1): 
+            num_boxes = driver.find_elements_by_id("numeric-input-box")
 
         print(f"# OPTION BOXES: {len(input_boxes)} # ANSWER BOXES: {len(answer_boxes)} # CHECK BOXES: {len(check_boxes)} # NUM BOXES: {len(num_boxes)}")
 
@@ -134,6 +144,7 @@ class Web_Functions():
         if answer_boxes: 
             answer_boxes[0].send_keys(random.choice(text_answers))
         elif input_boxes: 
+            driver.execute_script("scrollBy(0,250);")
             if check_boxes: 
                 random.choice(input_boxes).click()
                 driver.execute_script("scrollBy(0,250);")
@@ -151,7 +162,7 @@ class Web_Functions():
         else: 
             print(f"New input type on question {question}!")
 
-        time.sleep(1)
+        time.sleep(2)
 
     @staticmethod
     def submit_survey(driver): 
