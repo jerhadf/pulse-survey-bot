@@ -1,5 +1,5 @@
 {
-  "Total_Points_Accumulated": 755,
+  "Total_Points_Accumulated": 975,
   "Surveys_Completed": [
     {
       "name": "What's Your Type?",
@@ -302,6 +302,110 @@
       "questions": "11",
       "expected_time": "00:01:50",
       "bot_time": "0:00:13"
+    },
+    {
+      "name": "6/1: Top Q's",
+      "points": "15",
+      "respondents": "12305",
+      "questions": "7",
+      "expected_time": "00:01:10",
+      "bot_time": "0:00:12"
+    },
+    {
+      "name": "May 31: Top Q's",
+      "points": "20",
+      "respondents": "12237",
+      "questions": "9",
+      "expected_time": "00:01:30",
+      "bot_time": "0:00:18"
+    },
+    {
+      "name": "May 30: Top Q's",
+      "points": "15",
+      "respondents": "11369",
+      "questions": "7",
+      "expected_time": "00:01:10",
+      "bot_time": "0:00:14"
+    },
+    {
+      "name": "Finals Period",
+      "points": "15",
+      "respondents": "11446",
+      "questions": "8",
+      "expected_time": "00:01:20",
+      "bot_time": "0:00:20"
+    },
+    {
+      "name": "U.S. Military",
+      "points": "20",
+      "respondents": "11828",
+      "questions": "11",
+      "expected_time": "00:01:50",
+      "bot_time": "0:00:18"
+    },
+    {
+      "name": "Transgender Issues",
+      "points": "20",
+      "respondents": "12607",
+      "questions": "9",
+      "expected_time": "00:01:30",
+      "bot_time": "0:00:14"
+    },
+    {
+      "name": "Paying on Dates",
+      "points": "20",
+      "respondents": "12821",
+      "questions": "10",
+      "expected_time": "00:01:40",
+      "bot_time": "0:00:17"
+    },
+    {
+      "name": "Productivity",
+      "points": "15",
+      "respondents": "10639",
+      "questions": "8",
+      "expected_time": "00:01:20",
+      "bot_time": "0:00:15"
+    },
+    {
+      "name": "May 24: Top Q's",
+      "points": "15",
+      "respondents": "10976",
+      "questions": "7",
+      "expected_time": "00:01:10",
+      "bot_time": "0:00:10"
+    },
+    {
+      "name": "May 23: Top Q's",
+      "points": "10",
+      "respondents": "10568",
+      "questions": "6",
+      "expected_time": "00:01:00",
+      "bot_time": "0:00:08"
+    },
+    {
+      "name": "Dick's House",
+      "points": "20",
+      "respondents": "680",
+      "questions": "9",
+      "expected_time": "00:01:30",
+      "bot_time": "0:00:20"
+    },
+    {
+      "name": "Reproductive Ethics",
+      "points": "20",
+      "respondents": "11696",
+      "questions": "10",
+      "expected_time": "00:01:40",
+      "bot_time": "0:00:18"
+    },
+    {
+      "name": "Homesickness",
+      "points": "15",
+      "respondents": "10409",
+      "questions": "8",
+      "expected_time": "00:01:20",
+      "bot_time": "0:00:14"
     }
   ]
 }

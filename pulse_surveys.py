@@ -48,8 +48,8 @@ while surveys_completed < num_surveys:
     print(f"\nSURVEY COMPLETED!\n")
     surveys_completed += 1
 
-    elapsed_time = time.time() - start_time # keep track of time bot took on survey
-
     Web_Functions.submit_survey(driver)
+
+    elapsed_time = time.time() - start_time # keep track of time bot took on survey
 
     Web_Functions.save_survey_stats(curr_survey_text, elapsed_time)
