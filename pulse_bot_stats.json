@@ -1,5 +1,5 @@
 {
-  "Total_Points_Accumulated": 975,
+  "Total_Points_Accumulated": 1125,
   "Surveys_Completed": [
     {
       "name": "What's Your Type?",
@@ -406,6 +406,70 @@
       "questions": "8",
       "expected_time": "00:01:20",
       "bot_time": "0:00:14"
+    },
+    {
+      "name": "Sexual Orientation",
+      "points": "20",
+      "respondents": "12806",
+      "questions": "9",
+      "expected_time": "00:01:30",
+      "bot_time": "0:00:15"
+    },
+    {
+      "name": "Positive Thinking",
+      "points": "10",
+      "respondents": "10226",
+      "questions": "5",
+      "expected_time": "00:00:50",
+      "bot_time": "0:00:09"
+    },
+    {
+      "name": "Death Penalty",
+      "points": "15",
+      "respondents": "9992",
+      "questions": "8",
+      "expected_time": "00:01:20",
+      "bot_time": "0:00:15"
+    },
+    {
+      "name": "School House Playground Event",
+      "points": "15",
+      "respondents": "674",
+      "questions": "7",
+      "expected_time": "00:01:10",
+      "bot_time": "0:00:11"
+    },
+    {
+      "name": "Summer Plans",
+      "points": "15",
+      "respondents": "10725",
+      "questions": "8",
+      "expected_time": "00:01:20",
+      "bot_time": "0:00:14"
+    },
+    {
+      "name": "Mother\u2019s Day",
+      "points": "30",
+      "respondents": "13425",
+      "questions": "15",
+      "expected_time": "00:02:30",
+      "bot_time": "0:00:28"
+    },
+    {
+      "name": "Breaking Points",
+      "points": "35",
+      "respondents": "14944",
+      "questions": "18",
+      "expected_time": "00:03:00",
+      "bot_time": "0:01:00"
+    },
+    {
+      "name": "5/9: Top Q\u2019s",
+      "points": "10",
+      "respondents": "10613",
+      "questions": "6",
+      "expected_time": "00:01:00",
+      "bot_time": "0:00:08"
     }
   ]
 }
