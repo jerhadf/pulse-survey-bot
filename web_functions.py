@@ -225,27 +225,17 @@ class Web_Functions():
 
         # find the take new survey button and click it to return to surveys page 
         try: 
-            Web_Functions.wait_until_element_appears(driver, "//*[contains(text(), 'Take A Survey')]", find_type = By.XPATH)
-            take_new_survey_btn = driver.find_element_by_xpath("//*[contains(text(), 'Take A Survey')]")
-            print(f"Take a Survey Button Text: {take_new_survey_btn.text}")
-        except AttributeError: 
-            print(f"AttributeError caught! Trying to click survey complete button another way")
-            Web_Functions.wait_until_element_appears(driver, ".survey-complete-button.small", find_type = By.CSS_SELECTOR)
-            small_complete_btns = driver.find_elements_by_css_selector(".survey-complete-button.small")
-            small_complete_btns[1].click()
+            driver.find_element_by_xpath("//*[contains(text(), 'Take A Survey')]")
         except NoSuchElementException:
             Web_Functions.wait_until_element_appears(driver, 'survey-submit-button')
             final_submit_btn = driver.find_element_by_class_name("survey-submit-button")
             final_submit_btn.click()
-        else: 
-            take_new_survey_btn.click()
-
-        time.sleep(2)
-
-        # navigate back to the homepage to ensure we go back to survey answering page
-        Web_Functions.wait_until_element_appears(driver, 'icon-container')
-        pulse_logo_btn = driver.find_element_by_class_name("icon-container")
-        pulse_logo_btn.click()
+        finally:
+            time.sleep(1)
+            # navigate back to the homepage to ensure we go back to survey answering page
+            Web_Functions.wait_until_element_appears(driver, 'icon-container')
+            pulse_logo_btn = driver.find_element_by_class_name("icon-container")
+            pulse_logo_btn.click()
 
     @staticmethod
     def check_if_too_fast(driver):
@@ -254,7 +244,7 @@ class Web_Functions():
             print(f"Submitted the survey too quickly! Trying again")
             go_back_btn = driver.find_element_by_class_name("go-back-container")
             go_back_btn.click()
-            time.sleep(4)
+            time.sleep(1)
             submit_button = driver.find_elements_by_class_name("question-button")[-1]
             submit_button.click()
 
