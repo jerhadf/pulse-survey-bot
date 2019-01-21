@@ -28,6 +28,7 @@ while surveys_completed < num_surveys:
     # open the first web survey available, save its stats
     curr_survey = web_surveys[0] 
     curr_survey.click()
+    print(f"*** ANSWERING SURVEY: {curr_survey.text[2]}, {curr_survey.text[0]} points ***")
     Web_Functions.save_survey_stats(curr_survey.text)
 
     # verify that highlighted question appears

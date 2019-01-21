@@ -3,7 +3,8 @@ import random
 import json
 from selenium import webdriver
 from selenium.webdriver.support.ui import WebDriverWait
-from selenium.common.exceptions import TimeoutException, NoSuchElementException, StaleElementReferenceException
+from selenium.webdriver.common.action_chains import ActionChains
+from selenium.common.exceptions import WebDriverException, TimeoutException, NoSuchElementException, StaleElementReferenceException
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.common.by import By
 
@@ -98,7 +99,7 @@ class Web_Functions():
         survey_time = survey_text[-1]
 
         # write these stats to a file to keep track
-        with open('tests\pulse_bot_stats.json', 'r') as fp:
+        with open(r'tests\pulse_bot_stats.json', 'r') as fp:
             bot_stats = json.load(fp)
         
         bot_stats["Total_Points_Accumulated"] += int(survey_points)
@@ -110,7 +111,7 @@ class Web_Functions():
             "expected_time" : survey_time
         })
             
-        with open('tests\pulse_bot_stats.json', 'w') as fp:
+        with open(r'tests\pulse_bot_stats.json', 'w') as fp:
             json.dump(bot_stats, fp, indent=2)
 
     @staticmethod
@@ -164,9 +165,6 @@ class Web_Functions():
             input_boxes = driver.find_elements_by_class_name("mc-option")
         elif Web_Functions.wait_until_element_appears(driver, "answer-box", By.ID, wait_time=2): 
             answer_boxes = driver.find_elements_by_id("answer-box")
-        #! Check boxes will never be populated because it is always reached after mc-option
-        elif Web_Functions.wait_until_element_appears(driver, ".option-box.multi", By.CSS_SELECTOR, wait_time=2): 
-            check_boxes = driver.find_elements_by_css_selector(".option-box.multi")
         elif Web_Functions.wait_until_element_appears(driver, "numeric-input-box", By.ID, wait_time=2): 
             num_boxes = driver.find_elements_by_id("numeric-input-box")
 
@@ -174,17 +172,22 @@ class Web_Functions():
 
         # answer the question depending on the input type
         if answer_boxes: 
+            driver.execute_script("scrollBy(0,250);")
             answer_boxes[0].send_keys(random.choice(text_answers))
         elif input_boxes: 
             driver.execute_script("scrollBy(0,250);")
-            if check_boxes: 
-                random.choice(input_boxes).click()
-                driver.execute_script("scrollBy(0,250);")
-                random.choice(input_boxes).click()
-                driver.execute_script("scrollBy(0,250);")
-            random.choice(input_boxes).click()
+            option_chosen = random.choice(input_boxes[:4])
+            try: 
+                option_chosen.click()
+            except WebDriverException: 
+                action = ActionChains(driver)
+                action.move_to_element(option_chosen).perform()
+                time.sleep(.5)
+                option_chosen.click()
+
             driver.execute_script("scrollBy(0,250);")
         elif num_boxes: 
+            driver.execute_script("scrollBy(0,250);")
             if "GPA" in question_text:
                 num_boxes[0].send_keys("2.69")
             elif "Keystones" in question_text: 
