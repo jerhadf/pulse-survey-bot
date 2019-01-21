@@ -97,8 +97,6 @@ class Web_Functions():
         survey_questions = survey_text[-2]
         survey_time = survey_text[-1]
 
-        print(f"*** ANSWERING SURVEY: {survey_name}, {survey_points} points ***")
-
         # write these stats to a file to keep track
         with open('tests\pulse_bot_stats.json', 'r') as fp:
             bot_stats = json.load(fp)
