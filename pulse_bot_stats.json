@@ -1,5 +1,5 @@
 {
-  "Total_Points_Accumulated": 1125,
+  "Total_Points_Accumulated": 1920,
   "Surveys_Completed": [
     {
       "name": "What's Your Type?",
@@ -470,6 +470,350 @@
       "questions": "6",
       "expected_time": "00:01:00",
       "bot_time": "0:00:08"
+    },
+    {
+      "name": "Historical Figures",
+      "points": "20",
+      "respondents": "10012",
+      "questions": "10",
+      "expected_time": "00:01:40",
+      "bot_time": "0:00:12"
+    },
+    {
+      "name": "5/7: Top Q's",
+      "points": "10",
+      "respondents": "9300",
+      "questions": "5",
+      "expected_time": "00:00:50",
+      "bot_time": "0:00:09"
+    },
+    {
+      "name": "Marijuana Policy",
+      "points": "15",
+      "respondents": "9709",
+      "questions": "7",
+      "expected_time": "00:01:10",
+      "bot_time": "0:00:13"
+    },
+    {
+      "name": "Drug Use",
+      "points": "15",
+      "respondents": "10147",
+      "questions": "8",
+      "expected_time": "00:01:20",
+      "bot_time": "0:00:12"
+    },
+    {
+      "name": "Social Spaces",
+      "points": "10",
+      "respondents": "544",
+      "questions": "6",
+      "expected_time": "00:01:00",
+      "bot_time": "0:00:09"
+    },
+    {
+      "name": "Social Spaces",
+      "points": "10",
+      "respondents": "544",
+      "questions": "6",
+      "expected_time": "00:01:00",
+      "bot_time": "0:00:22"
+    },
+    {
+      "name": "Exercise",
+      "points": "25",
+      "respondents": "11357",
+      "questions": "12",
+      "expected_time": "00:02:00",
+      "bot_time": "0:00:19"
+    },
+    {
+      "name": "Marriage",
+      "points": "20",
+      "respondents": "10557",
+      "questions": "10",
+      "expected_time": "00:01:40",
+      "bot_time": "0:00:14"
+    },
+    {
+      "name": "Would You Rather?",
+      "points": "20",
+      "respondents": "10142",
+      "questions": "10",
+      "expected_time": "00:01:40",
+      "bot_time": "0:00:14"
+    },
+    {
+      "name": "Break Ups",
+      "points": "25",
+      "respondents": "11639",
+      "questions": "12",
+      "expected_time": "00:02:00",
+      "bot_time": "0:00:22"
+    },
+    {
+      "name": "4/26: Top Five",
+      "points": "10",
+      "respondents": "8792",
+      "questions": "5",
+      "expected_time": "00:00:50",
+      "bot_time": "0:00:07"
+    },
+    {
+      "name": "Reading & Writing",
+      "points": "20",
+      "respondents": "9356",
+      "questions": "11",
+      "expected_time": "00:01:50",
+      "bot_time": "0:00:23"
+    },
+    {
+      "name": "April 24: Top Questions",
+      "points": "15",
+      "respondents": "8705",
+      "questions": "7",
+      "expected_time": "00:01:10",
+      "bot_time": "0:00:14"
+    },
+    {
+      "name": "Single-Gender Orgs",
+      "points": "10",
+      "respondents": "8481",
+      "questions": "6",
+      "expected_time": "00:01:00",
+      "bot_time": "0:00:09"
+    },
+    {
+      "name": "Dance Parties",
+      "points": "10",
+      "respondents": "8926",
+      "questions": "6",
+      "expected_time": "00:01:00",
+      "bot_time": "0:00:08"
+    },
+    {
+      "name": "April 22: Top Q\u2019s",
+      "points": "15",
+      "respondents": "8539",
+      "questions": "8",
+      "expected_time": "00:01:20",
+      "bot_time": "0:00:15"
+    },
+    {
+      "name": "Dartmouth Top Q\u2019s",
+      "points": "15",
+      "respondents": "522",
+      "questions": "8",
+      "expected_time": "00:01:20",
+      "bot_time": "0:00:13"
+    },
+    {
+      "name": "Cat Calls",
+      "points": "10",
+      "respondents": "9041",
+      "questions": "6",
+      "expected_time": "00:01:00",
+      "bot_time": "0:00:08"
+    },
+    {
+      "name": "Lying",
+      "points": "20",
+      "respondents": "9321",
+      "questions": "11",
+      "expected_time": "00:01:50",
+      "bot_time": "0:00:17"
+    },
+    {
+      "name": "Finance & Consulting",
+      "points": "20",
+      "respondents": "8655",
+      "questions": "9",
+      "expected_time": "00:01:30",
+      "bot_time": "0:00:15"
+    },
+    {
+      "name": "Student Discrimination",
+      "points": "30",
+      "respondents": "11411",
+      "questions": "14",
+      "expected_time": "00:02:20",
+      "bot_time": "0:00:20"
+    },
+    {
+      "name": "Academic Rigor",
+      "points": "20",
+      "respondents": "1555",
+      "questions": "9",
+      "expected_time": "00:01:30",
+      "bot_time": "0:00:18"
+    },
+    {
+      "name": "Sexual Perceptions",
+      "points": "20",
+      "respondents": "10047",
+      "questions": "9",
+      "expected_time": "00:01:30",
+      "bot_time": "0:00:21"
+    },
+    {
+      "name": "Racial Climate",
+      "points": "15",
+      "respondents": "7816",
+      "questions": "8",
+      "expected_time": "00:01:20",
+      "bot_time": "0:00:13"
+    },
+    {
+      "name": "Dartmouth Top Q's",
+      "points": "10",
+      "respondents": "550",
+      "questions": "5",
+      "expected_time": "00:00:50",
+      "bot_time": "0:00:06"
+    },
+    {
+      "name": "Alcohol Policy",
+      "points": "20",
+      "respondents": "1721",
+      "questions": "10",
+      "expected_time": "00:01:40",
+      "bot_time": "0:00:18"
+    },
+    {
+      "name": "Secret Societies",
+      "points": "10",
+      "respondents": "8179",
+      "questions": "6",
+      "expected_time": "00:01:00",
+      "bot_time": "0:00:13"
+    },
+    {
+      "name": "Group Perceptions",
+      "points": "40",
+      "respondents": "16727",
+      "questions": "20",
+      "expected_time": "00:03:20",
+      "bot_time": "0:01:06"
+    },
+    {
+      "name": "Cross-Sex Friendships",
+      "points": "15",
+      "respondents": "9100",
+      "questions": "7",
+      "expected_time": "00:01:10",
+      "bot_time": "0:00:14"
+    },
+    {
+      "name": "NH College Voting",
+      "points": "15",
+      "respondents": "673",
+      "questions": "7",
+      "expected_time": "00:01:10",
+      "bot_time": "0:00:11"
+    },
+    {
+      "name": "User Feedback",
+      "points": "30",
+      "respondents": "1735",
+      "questions": "14",
+      "expected_time": "00:02:20",
+      "bot_time": "0:00:33"
+    },
+    {
+      "name": "Academic Satisfaction",
+      "points": "10",
+      "respondents": "7930",
+      "questions": "6",
+      "expected_time": "00:01:00",
+      "bot_time": "0:00:11"
+    },
+    {
+      "name": "Campus Safety",
+      "points": "15",
+      "respondents": "7957",
+      "questions": "8",
+      "expected_time": "00:01:20",
+      "bot_time": "0:00:13"
+    },
+    {
+      "name": "Political Party Quiz",
+      "points": "30",
+      "respondents": "1662",
+      "questions": "15",
+      "expected_time": "00:02:30",
+      "bot_time": "0:00:27"
+    },
+    {
+      "name": "Foreign Trade",
+      "points": "30",
+      "respondents": "1619",
+      "questions": "14",
+      "expected_time": "00:02:20",
+      "bot_time": "0:00:26"
+    },
+    {
+      "name": "Rejected Questions",
+      "points": "20",
+      "respondents": "1596",
+      "questions": "11",
+      "expected_time": "00:01:50",
+      "bot_time": "0:00:22"
+    },
+    {
+      "name": "March 31: Top Q's",
+      "points": "10",
+      "respondents": "548",
+      "questions": "6",
+      "expected_time": "00:01:00",
+      "bot_time": "0:00:08"
+    },
+    {
+      "name": "Internet Privacy",
+      "points": "20",
+      "respondents": "8618",
+      "questions": "10",
+      "expected_time": "00:01:40",
+      "bot_time": "0:00:17"
+    },
+    {
+      "name": "Autonomous Cars",
+      "points": "20",
+      "respondents": "1451",
+      "questions": "10",
+      "expected_time": "00:01:40",
+      "bot_time": "0:00:18"
+    },
+    {
+      "name": "Meal Plan Guide",
+      "points": "40",
+      "respondents": "709",
+      "questions": "19",
+      "expected_time": "00:03:10",
+      "bot_time": "0:00:50"
+    },
+    {
+      "name": "Social Media",
+      "points": "20",
+      "respondents": "8433",
+      "questions": "11",
+      "expected_time": "00:01:50",
+      "bot_time": "0:00:15"
+    },
+    {
+      "name": "Belonging Index",
+      "points": "20",
+      "respondents": "8478",
+      "questions": "10",
+      "expected_time": "00:01:40",
+      "bot_time": "0:00:13"
+    },
+    {
+      "name": "Belonging Index",
+      "points": "20",
+      "respondents": "8478",
+      "questions": "10",
+      "expected_time": "00:01:40",
+      "bot_time": "0:00:13"
     }
   ]
 }

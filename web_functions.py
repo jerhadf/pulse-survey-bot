@@ -211,13 +211,18 @@ class Web_Functions():
             Web_Functions.wait_until_element_appears(driver, 'survey-submit-button')
             final_submit_btn = driver.find_element_by_class_name("survey-submit-button")
             final_submit_btn.click()
-        except (StaleElementReferenceException, NoSuchElementException): 
+        except (StaleElementReferenceException, NoSuchElementException) as error: 
             print(f"Error caught, clicking submit button")
+            print(error)
             submit_button = driver.find_elements_by_class_name("question-button")[-1]
             submit_button.click()
             Web_Functions.wait_until_element_appears(driver, 'survey-submit-button')
             final_submit_btn = driver.find_element_by_class_name("survey-submit-button")
             final_submit_btn.click()
+        finally:
+            Web_Functions.wait_until_element_appears(driver, 'icon-container')
+            pulse_logo_btn = driver.find_element_by_class_name("icon-container")
+            pulse_logo_btn.click()
         
         time.sleep(1)
 
