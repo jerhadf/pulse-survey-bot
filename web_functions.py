@@ -1,6 +1,7 @@
 import time
 import random
 import json
+from datetime import timedelta
 from selenium import webdriver
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.common.action_chains import ActionChains
@@ -85,13 +86,13 @@ class Web_Functions():
         return web_surveys
 
     @staticmethod
-    def save_survey_stats(survey): 
+    def save_survey_stats(survey_text, time_taken): 
         ''' 
         Saves the passed survey bot_stats to a JSON file 
-        arg survey -- the .text value for a WebElement item 
+        arg survey -- the .text value for a WebElement item, split by '\n'
+        arg time_taken -- the time taken for survey completion by bot
         ''' 
 
-        survey_text = survey.split("\n")
         survey_points = survey_text[0]
         survey_name = survey_text[2]
         survey_respondents = survey_text[3]
@@ -108,7 +109,8 @@ class Web_Functions():
             "points" : survey_points, 
             "respondents" : survey_respondents, 
             "questions" : survey_questions,
-            "expected_time" : survey_time
+            "expected_time" : f"00:{survey_time}",
+            "bot_time" : str(timedelta(seconds=round(time_taken)))
         })
             
         with open(r'tests\pulse_bot_stats.json', 'w') as fp:
@@ -160,12 +162,12 @@ class Web_Functions():
         input_boxes, answer_boxes, num_boxes, check_boxes = [], [], [], []
 
         # find all the types of answer inputs 
-        time.sleep(1)
-        if Web_Functions.wait_until_element_appears(driver, "mc-option", By.CLASS_NAME, wait_time=2): 
+        time.sleep(.5)
+        if Web_Functions.wait_until_element_appears(driver, "mc-option", By.CLASS_NAME, wait_time=1): 
             input_boxes = driver.find_elements_by_class_name("mc-option")
-        elif Web_Functions.wait_until_element_appears(driver, "answer-box", By.ID, wait_time=2): 
+        elif Web_Functions.wait_until_element_appears(driver, "answer-box", By.ID, wait_time=1): 
             answer_boxes = driver.find_elements_by_id("answer-box")
-        elif Web_Functions.wait_until_element_appears(driver, "numeric-input-box", By.ID, wait_time=2): 
+        elif Web_Functions.wait_until_element_appears(driver, "numeric-input-box", By.ID, wait_time=1): 
             num_boxes = driver.find_elements_by_id("numeric-input-box")
 
         print(f"# OPTION BOXES: {len(input_boxes)} # ANSWER BOXES: {len(answer_boxes)} # CHECK BOXES: {len(check_boxes)} # NUM BOXES: {len(num_boxes)}")
@@ -184,7 +186,6 @@ class Web_Functions():
                 action.move_to_element(option_chosen).perform()
                 time.sleep(.5)
                 option_chosen.click()
-
             driver.execute_script("scrollBy(0,250);")
         elif num_boxes: 
             driver.execute_script("scrollBy(0,250);")
@@ -197,32 +198,65 @@ class Web_Functions():
         else: 
             print(f"New input type on question {question}!")
 
-        time.sleep(2)
+        time.sleep(.5)
 
     @staticmethod
     def submit_survey(driver): 
-        # click the small submit button (the last item with question-button class)
-        Web_Functions.wait_until_element_appears(driver, "question-button")
+        ''' Submits a finished survey ''' 
 
-        submit_button = driver.find_elements_by_class_name("question-button")[-1]
         time.sleep(1)
-        
+
+        # continue to submit survey
         try: 
+            Web_Functions.wait_until_element_appears(driver, 'survey-submit-button')
+            final_submit_btn = driver.find_element_by_class_name("survey-submit-button")
+            final_submit_btn.click()
+        except (StaleElementReferenceException, NoSuchElementException): 
+            print(f"Error caught, clicking submit button")
+            submit_button = driver.find_elements_by_class_name("question-button")[-1]
             submit_button.click()
-        except StaleElementReferenceException: 
-            print("StaleElement exception caught, trying to click survey submit button")
-        finally: 
             Web_Functions.wait_until_element_appears(driver, 'survey-submit-button')
             final_submit_btn = driver.find_element_by_class_name("survey-submit-button")
             final_submit_btn.click()
         
         time.sleep(1)
 
-        # find the take new survey button and click it to return to surveys page 
-        Web_Functions.wait_until_element_appears(driver, "//*[contains(text(), 'Take A Survey')]", find_type = By.XPATH)
-        take_new_survey_btn = driver.find_element_by_xpath("//*[contains(text(), 'Take A Survey')]")
-        take_new_survey_btn.click()
+        Web_Functions.check_if_too_fast(driver)
 
+        # find the take new survey button and click it to return to surveys page 
+        try: 
+            Web_Functions.wait_until_element_appears(driver, "//*[contains(text(), 'Take A Survey')]", find_type = By.XPATH)
+            take_new_survey_btn = driver.find_element_by_xpath("//*[contains(text(), 'Take A Survey')]")
+            print(f"Take a Survey Button Text: {take_new_survey_btn.text}")
+        except AttributeError: 
+            print(f"AttributeError caught! Trying to click survey complete button another way")
+            Web_Functions.wait_until_element_appears(driver, ".survey-complete-button.small", find_type = By.CSS_SELECTOR)
+            small_complete_btns = driver.find_elements_by_css_selector(".survey-complete-button.small")
+            small_complete_btns[1].click()
+        except NoSuchElementException:
+            Web_Functions.wait_until_element_appears(driver, 'survey-submit-button')
+            final_submit_btn = driver.find_element_by_class_name("survey-submit-button")
+            final_submit_btn.click()
+        else: 
+            take_new_survey_btn.click()
+
+        time.sleep(2)
+
+        # navigate back to the homepage to ensure we go back to survey answering page
+        Web_Functions.wait_until_element_appears(driver, 'icon-container')
+        pulse_logo_btn = driver.find_element_by_class_name("icon-container")
+        pulse_logo_btn.click()
+
+    @staticmethod
+    def check_if_too_fast(driver):
+        ''' If too fast message appears, wait a few seconds and then resubmit '''
+        if Web_Functions.wait_until_element_appears(driver, 'too-fast-message', wait_time=1): 
+            print(f"Submitted the survey too quickly! Trying again")
+            go_back_btn = driver.find_element_by_class_name("go-back-container")
+            go_back_btn.click()
+            time.sleep(4)
+            submit_button = driver.find_elements_by_class_name("question-button")[-1]
+            submit_button.click()
 
     
 

@@ -1,33 +1,33 @@
 {
-  "Total_Points_Accumulated": 120,
+  "Total_Points_Accumulated": 755,
   "Surveys_Completed": [
     {
       "name": "What's Your Type?",
       "points": "15",
       "respondents": "33704",
       "questions": "10",
-      "expected_time": "01:40"
+      "expected_time": "00:01:40"
     },
     {
       "name": "7/14: Top Q's",
       "points": "10",
       "respondents": "22495",
       "questions": "8",
-      "expected_time": "01:20"
+      "expected_time": "00:01:20"
     },
     {
       "name": "Self-Comparison",
       "points": "15",
       "respondents": "25758",
       "questions": "7",
-      "expected_time": "01:10"
+      "expected_time": "00:01:10"
     },
     {
       "name": "7/11: Top Q's",
       "points": "10",
       "respondents": "22255",
       "questions": "7",
-      "expected_time": "01:10"
+      "expected_time": "00:01:10"
     },
     {
       "name": "Student Housing",
@@ -41,14 +41,14 @@
       "points": "20",
       "respondents": "27148",
       "questions": "8",
-      "expected_time": "01:20"
+      "expected_time": "00:01:20"
     },
     {
       "name": "Drunk Driving",
       "points": "15",
       "respondents": "21885",
       "questions": "10",
-      "expected_time": "01:40"
+      "expected_time": "00:01:40"
     },
     {
       "name": "Streaming Services",
@@ -62,7 +62,246 @@
       "points": "10",
       "respondents": "21027",
       "questions": "8",
-      "expected_time": "01:20"
+      "expected_time": "00:01:20"
+    },
+    {
+      "name": "Self-Perception",
+      "points": "20",
+      "respondents": "25151",
+      "questions": "12",
+      "expected_time": "00:02:00"
+    },
+    {
+      "name": "July 5th: Top Q's",
+      "points": "15",
+      "respondents": "20122",
+      "questions": "9",
+      "expected_time": "00:01:30"
+    },
+    {
+      "name": "Independence Day",
+      "points": "25",
+      "respondents": "25846",
+      "questions": "12",
+      "expected_time": "00:02:00"
+    },
+    {
+      "name": "Greek Life (2)",
+      "points": "20",
+      "respondents": "21913",
+      "questions": "10",
+      "expected_time": "00:01:40"
+    },
+    {
+      "name": "July 1st: Top Q's",
+      "points": "15",
+      "respondents": "19180",
+      "questions": "8",
+      "expected_time": "00:01:20"
+    },
+    {
+      "name": "Birth Control (2)",
+      "points": "20",
+      "respondents": "24299",
+      "questions": "11",
+      "expected_time": "00:01:50"
+    },
+    {
+      "name": "Birth Control (1)",
+      "points": "20",
+      "respondents": "24400",
+      "questions": "9",
+      "expected_time": "00:01:30"
+    },
+    {
+      "name": "Role of Government",
+      "points": "20",
+      "respondents": "19088",
+      "questions": "9",
+      "expected_time": "00:01:30"
+    },
+    {
+      "name": "June 27th: Top Q's",
+      "points": "20",
+      "respondents": "18403",
+      "questions": "10",
+      "expected_time": "00:01:40"
+    },
+    {
+      "name": "June 26th: Top Q's",
+      "points": "15",
+      "respondents": "17373",
+      "questions": "8",
+      "expected_time": "00:01:20",
+      "bot_time": "00:00:33"
+    },
+    {
+      "name": "June 26th: Top Q's",
+      "points": "15",
+      "respondents": "17373",
+      "questions": "8",
+      "expected_time": "00:01:20",
+      "bot_time": "0:00:32"
+    },
+    {
+      "name": "Top Q's: June 24th",
+      "points": "15",
+      "respondents": "18247",
+      "questions": "8",
+      "expected_time": "00:01:20",
+      "bot_time": "0:00:28"
+    },
+    {
+      "name": "Top Q's: June 24th",
+      "points": "15",
+      "respondents": "18247",
+      "questions": "8",
+      "expected_time": "00:01:20",
+      "bot_time": "0:01:46"
+    },
+    {
+      "name": "Ivy Quiz",
+      "points": "40",
+      "respondents": "27262",
+      "questions": "21",
+      "expected_time": "00:03:30",
+      "bot_time": "0:00:32"
+    },
+    {
+      "name": "Would You Rather (2)",
+      "points": "20",
+      "respondents": "21438",
+      "questions": "10",
+      "expected_time": "00:01:40",
+      "bot_time": "0:00:36"
+    },
+    {
+      "name": "World Leaders",
+      "points": "20",
+      "respondents": "15577",
+      "questions": "11",
+      "expected_time": "00:01:50",
+      "bot_time": "0:00:39"
+    },
+    {
+      "name": "June 17: Top Q's",
+      "points": "15",
+      "respondents": "15567",
+      "questions": "7",
+      "expected_time": "00:01:10",
+      "bot_time": "0:00:13"
+    },
+    {
+      "name": "June 16: Top Q's",
+      "points": "15",
+      "respondents": "14071",
+      "questions": "7",
+      "expected_time": "00:01:10",
+      "bot_time": "0:00:15"
+    },
+    {
+      "name": "June 15th: Top Q's",
+      "points": "10",
+      "respondents": "14227",
+      "questions": "6",
+      "expected_time": "00:01:00",
+      "bot_time": "0:00:09"
+    },
+    {
+      "name": "Skipping Class",
+      "points": "15",
+      "respondents": "15885",
+      "questions": "7",
+      "expected_time": "00:01:10",
+      "bot_time": "0:00:12"
+    },
+    {
+      "name": "Religion and Science",
+      "points": "25",
+      "respondents": "16745",
+      "questions": "12",
+      "expected_time": "00:02:00",
+      "bot_time": "0:00:17"
+    },
+    {
+      "name": "Personal Growth (2)",
+      "points": "30",
+      "respondents": "17895",
+      "questions": "16",
+      "expected_time": "00:02:40",
+      "bot_time": "0:00:20"
+    },
+    {
+      "name": "Personal Growth (1)",
+      "points": "30",
+      "respondents": "17076",
+      "questions": "15",
+      "expected_time": "00:02:30",
+      "bot_time": "0:00:20"
+    },
+    {
+      "name": "Meaning of Life",
+      "points": "20",
+      "respondents": "15132",
+      "questions": "9",
+      "expected_time": "00:01:30",
+      "bot_time": "0:00:15"
+    },
+    {
+      "name": "Professors",
+      "points": "25",
+      "respondents": "14491",
+      "questions": "12",
+      "expected_time": "00:02:00",
+      "bot_time": "0:00:28"
+    },
+    {
+      "name": "Occupations",
+      "points": "35",
+      "respondents": "18889",
+      "questions": "17",
+      "expected_time": "00:02:50",
+      "bot_time": "0:00:21"
+    },
+    {
+      "name": "Student Loans",
+      "points": "20",
+      "respondents": "12856",
+      "questions": "9",
+      "expected_time": "00:01:30",
+      "bot_time": "0:00:20"
+    },
+    {
+      "name": "Diversity",
+      "points": "25",
+      "respondents": "13860",
+      "questions": "12",
+      "expected_time": "00:02:00",
+      "bot_time": "0:00:17"
+    },
+    {
+      "name": "6/4: Top Q's",
+      "points": "15",
+      "respondents": "13182",
+      "questions": "8",
+      "expected_time": "00:01:20",
+      "bot_time": "0:00:16"
+    },
+    {
+      "name": "Workplace Harassment",
+      "points": "20",
+      "respondents": "13518",
+      "questions": "11",
+      "expected_time": "00:01:50",
+      "bot_time": "0:00:14"
+    },
+    {
+      "name": "Workplace Harassment",
+      "points": "20",
+      "respondents": "13518",
+      "questions": "11",
+      "expected_time": "00:01:50",
+      "bot_time": "0:00:13"
     }
   ]
 }
