@@ -1,20 +1,16 @@
 import time
-import random
-import re 
 from selenium import webdriver
-from selenium.webdriver.common.keys import Keys
-from selenium.webdriver.chrome.options import Options
-from selenium.webdriver.support.ui import WebDriverWait
-from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.common.by import By
-from selenium.common.exceptions import TimeoutException, NoSuchElementException, StaleElementReferenceException
 from web_functions import Web_Functions
 
 driver = Web_Functions.open_site('https://collegepulse.com/app/answer') 
 
-num_surveys = 100
+num_surveys = 473
 surveys_completed = 0 
 question_answers = Web_Functions.generate_answers(75)
+
+#!TODO: refactor so all clicks use ActionChains(driver).move_to_element(element).click(element).perform() instead of just WebElement.click()
+
 while surveys_completed < num_surveys:
 
     # navigate to surveys page and sort by most recent surveys
@@ -27,7 +23,7 @@ while surveys_completed < num_surveys:
     Web_Functions.wait_until_element_appears(driver, "survey-card")
 
     # find all available web surveys
-    web_surveys = Web_Functions.find_available_web_surveys(driver)
+    web_surveys = Web_Functions.find_available_surveys(driver)
 
     curr_survey_text = web_surveys[0].text.split('\n')
     web_surveys[0].click()
@@ -56,3 +52,5 @@ while surveys_completed < num_surveys:
     elapsed_time = time.time() - start_time # keep track of time bot took on survey
 
     Web_Functions.save_survey_stats(curr_survey_text, elapsed_time)
+
+driver.quit()

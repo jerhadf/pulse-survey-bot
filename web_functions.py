@@ -129,8 +129,8 @@ class Web_Functions():
             "bot_time" : str(timedelta(seconds=round(time_taken)))
         })
             
-        with open(r'tests\pulse_bot_stats.json', 'w', encoding='utf-8') as fp:
-            json.dump(bot_stats, fp, indent=2, ensure_ascii = False)
+        with open(r'tests\pulse_bot_stats.json', 'w') as fp:
+            json.dump(bot_stats, fp, indent=2)
     
     @staticmethod
     def add_times(curr_time, new_time): 
@@ -172,9 +172,6 @@ class Web_Functions():
 
         generated_answers = driver.find_elements_by_class_name("support-sentence")
         question_answers = [answer.text for answer in generated_answers]
-
-        with open('generated_answers.txt', 'w') as file:
-            file.write('\n'.join(question_answers))
 
         driver.quit()
 
