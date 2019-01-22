@@ -21,7 +21,7 @@ for i in range(1, len(page_numbers) + 1):
     print(f"... clicking page {page_number.text} button ...")
     ActionChains(driver).move_to_element(page_number).click(page_number).perform() 
 
-    time.sleep(2.5)
+    time.sleep(3)
     surveys = Web_Functions.find_available_surveys(driver, type="all")
     web = surveys[0]
     mobile = surveys[1]
@@ -67,3 +67,4 @@ for i in range(1, len(page_numbers) + 1):
 
     print(f"SURVEYS FOUND on PAGE {page_number.text}: WEB {len(web)} MOBILE {len(mobile)}")
 
+driver.quit()
