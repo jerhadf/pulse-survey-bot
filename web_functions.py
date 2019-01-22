@@ -76,14 +76,30 @@ class Web_Functions():
         time.sleep(.25)
     
     @staticmethod 
-    def find_available_web_surveys(driver): 
-        ''' Find all available surveys in current page and return all web surveys ''' 
+    def find_available_surveys(driver, type="web"): 
+        ''' 
+        Find all available surveys in current page and return the list of survey-card WebElements
+        arg type -- the type of surveys to be returned ('mobile', 'web', or 'all', by default web) 
+        if 'all' is selected, returns a tuple of lists (web_surveys, mobile surveys)
+        ''' 
+
+        Web_Functions.wait_until_element_appears(driver, ".survey-card", find_type=By.CSS_SELECTOR)
         all_surveys = driver.find_elements_by_css_selector(".survey-card")
         mobile_surveys = driver.find_elements_by_css_selector(".survey-card.mobile-only")
         web_surveys = [survey for survey in all_surveys if survey not in mobile_surveys]
-        print(f"\nSURVEYS AVAILABLE: MOBILE - {len(mobile_surveys)} | WEB - {len(web_surveys)} \n")
+        print(f"\nSURVEYS AVAILABLE: MOBILE - {len(mobile_surveys)} | WEB - {len(web_surveys)}")
+        
+        # if there are no web_surveys on this page, navigate to another one and check recursively
+        if type == "web" and not web_surveys: 
+            page_numbers = driver.find_elements_by_class_name('page-number ')
+            page_number = random.choice(page_numbers)
+            print(f"No web surveys found, proceeding to another random page (pg. {page_number.text})")
+            ActionChains(driver).move_to_element(page_number).click(page_number).perform() # move to item and click it
+            web_surveys = Web_Functions.find_available_surveys(driver)
 
-        return web_surveys
+        if type == "web": return web_surveys
+        elif type == "mobile": return mobile_surveys
+        else: return (web_surveys, mobile_surveys)
 
     @staticmethod
     def save_survey_stats(survey_text, time_taken): 
@@ -113,8 +129,27 @@ class Web_Functions():
             "bot_time" : str(timedelta(seconds=round(time_taken)))
         })
             
-        with open(r'tests\pulse_bot_stats.json', 'w') as fp:
-            json.dump(bot_stats, fp, indent=2)
+        with open(r'tests\pulse_bot_stats.json', 'w', encoding='utf-8') as fp:
+            json.dump(bot_stats, fp, indent=2, ensure_ascii = False)
+    
+    @staticmethod
+    def add_times(curr_time, new_time): 
+        ''' Takes two times (one current, one to add to current value) and adds them using timedeltas, returns string '''
+        curr_split = list(map(int, curr_time.split(":")))
+        new_split = list(map(int, new_time.split(":")))
+        if len(curr_split) == 3:
+            hrs, mins, secs = curr_split
+            curr_time = timedelta(hours = hrs, minutes = mins, seconds = secs)
+        else: 
+            mins, secs = curr_split
+            curr_time = timedelta(minutes = mins, seconds = secs)
+        if len(new_split) == 3:
+            hrs, mins, secs = new_split
+            new_time = timedelta(hours = hrs, minutes = mins, seconds = secs)
+        else: 
+            mins, secs = new_split
+            new_time = timedelta(minutes = mins, seconds = secs)
+        return str(curr_time + new_time)
 
     @staticmethod
     def generate_answers(num_answers): 
@@ -204,7 +239,7 @@ class Web_Functions():
     def submit_survey(driver): 
         ''' Submits a finished survey ''' 
 
-        time.sleep(1)
+        time.sleep(2)
 
         # continue to submit survey
         try: 

@@ -1,5 +1,5 @@
 {
-  "Total_Points_Accumulated": 1920,
+  "Total_Points_Accumulated": 2630,
   "Surveys_Completed": [
     {
       "name": "What's Your Type?",
@@ -814,6 +814,390 @@
       "questions": "10",
       "expected_time": "00:01:40",
       "bot_time": "0:00:13"
+    },
+    {
+      "name": "Entrepreneurship",
+      "points": "20",
+      "respondents": "8711",
+      "questions": "11",
+      "expected_time": "00:01:50",
+      "bot_time": "0:00:31"
+    },
+    {
+      "name": "Study Drugs",
+      "points": "20",
+      "respondents": "8321",
+      "questions": "11",
+      "expected_time": "00:01:50",
+      "bot_time": "0:00:35"
+    },
+    {
+      "name": "Group Projects",
+      "points": "20",
+      "respondents": "1762",
+      "questions": "9",
+      "expected_time": "00:01:30",
+      "bot_time": "0:00:28"
+    },
+    {
+      "name": "March 15: Top Q's",
+      "points": "10",
+      "respondents": "1677",
+      "questions": "6",
+      "expected_time": "00:01:00",
+      "bot_time": "0:00:30"
+    },
+    {
+      "name": "Student Walkouts",
+      "points": "10",
+      "respondents": "1557",
+      "questions": "4",
+      "expected_time": "00:00:40",
+      "bot_time": "0:00:10"
+    },
+    {
+      "name": "Second Amendment",
+      "points": "15",
+      "respondents": "1654",
+      "questions": "8",
+      "expected_time": "00:01:20",
+      "bot_time": "0:00:30"
+    },
+    {
+      "name": "Sexual Assault",
+      "points": "30",
+      "respondents": "11991",
+      "questions": "14",
+      "expected_time": "00:02:20",
+      "bot_time": "0:00:48"
+    },
+    {
+      "name": "Peer Perception",
+      "points": "25",
+      "respondents": "1770",
+      "questions": "12",
+      "expected_time": "00:02:00",
+      "bot_time": "0:00:31"
+    },
+    {
+      "name": "March 6: Top Q's",
+      "points": "20",
+      "respondents": "1922",
+      "questions": "11",
+      "expected_time": "00:01:50",
+      "bot_time": "0:00:31"
+    },
+    {
+      "name": "Sociability",
+      "points": "20",
+      "respondents": "1908",
+      "questions": "10",
+      "expected_time": "00:01:40",
+      "bot_time": "0:00:17"
+    },
+    {
+      "name": "AI",
+      "points": "15",
+      "respondents": "1564",
+      "questions": "8",
+      "expected_time": "00:01:20",
+      "bot_time": "0:00:15"
+    },
+    {
+      "name": "Preferred Pronouns",
+      "points": "25",
+      "respondents": "1985",
+      "questions": "12",
+      "expected_time": "00:02:00",
+      "bot_time": "0:00:36"
+    },
+    {
+      "name": "Confederate Symbols",
+      "points": "20",
+      "respondents": "8650",
+      "questions": "9",
+      "expected_time": "00:01:30",
+      "bot_time": "0:00:16"
+    },
+    {
+      "name": "Dietary Restrictions",
+      "points": "20",
+      "respondents": "1871",
+      "questions": "10",
+      "expected_time": "00:01:40",
+      "bot_time": "0:00:23"
+    },
+    {
+      "name": "Letter of Appreciation",
+      "points": "10",
+      "respondents": "1083",
+      "questions": "4",
+      "expected_time": "00:00:40",
+      "bot_time": "0:00:26"
+    },
+    {
+      "name": "N-Word",
+      "points": "20",
+      "respondents": "8839",
+      "questions": "9",
+      "expected_time": "00:01:30",
+      "bot_time": "0:00:19"
+    },
+    {
+      "name": "Future Predictions",
+      "points": "20",
+      "respondents": "1740",
+      "questions": "11",
+      "expected_time": "00:01:50",
+      "bot_time": "0:00:28"
+    },
+    {
+      "name": "Trolley Problem",
+      "points": "20",
+      "respondents": "8046",
+      "questions": "10",
+      "expected_time": "00:01:40",
+      "bot_time": "0:00:30"
+    },
+    {
+      "name": "Financial Psychology",
+      "points": "15",
+      "respondents": "7945",
+      "questions": "8",
+      "expected_time": "00:01:20",
+      "bot_time": "0:00:27"
+    },
+    {
+      "name": "Trips Application",
+      "points": "0",
+      "respondents": "829",
+      "questions": "1",
+      "expected_time": "00:00:10",
+      "bot_time": "0:00:06"
+    },
+    {
+      "name": "NFL",
+      "points": "15",
+      "respondents": "7875",
+      "questions": "7",
+      "expected_time": "00:01:10",
+      "bot_time": "0:00:14"
+    },
+    {
+      "name": "Would You Rather...?",
+      "points": "10",
+      "respondents": "8604",
+      "questions": "6",
+      "expected_time": "00:01:00",
+      "bot_time": "0:00:26"
+    },
+    {
+      "name": "Drug Prices",
+      "points": "15",
+      "respondents": "1817",
+      "questions": "8",
+      "expected_time": "00:01:20",
+      "bot_time": "0:00:23"
+    },
+    {
+      "name": "Grammys 2018",
+      "points": "10",
+      "respondents": "2132",
+      "questions": "5",
+      "expected_time": "00:00:50",
+      "bot_time": "0:00:11"
+    },
+    {
+      "name": "JUUL",
+      "points": "10",
+      "respondents": "8965",
+      "questions": "4",
+      "expected_time": "00:00:40",
+      "bot_time": "0:00:20"
+    },
+    {
+      "name": "Majors at Dartmouth",
+      "points": "10",
+      "respondents": "926",
+      "questions": "5",
+      "expected_time": "00:00:50",
+      "bot_time": "0:00:11"
+    },
+    {
+      "name": "Data Journalist App",
+      "points": "0",
+      "respondents": "1591",
+      "questions": "1",
+      "expected_time": "00:00:10",
+      "bot_time": "0:00:20"
+    },
+    {
+      "name": "Marriage and Divorce",
+      "points": "25",
+      "respondents": "11107",
+      "questions": "12",
+      "expected_time": "00:02:00",
+      "bot_time": "0:00:19"
+    },
+    {
+      "name": "Cheating",
+      "points": "20",
+      "respondents": "2625",
+      "questions": "10",
+      "expected_time": "00:01:40",
+      "bot_time": "0:00:17"
+    },
+    {
+      "name": "User Feedback",
+      "points": "25",
+      "respondents": "667",
+      "questions": "12",
+      "expected_time": "00:02:00",
+      "bot_time": "0:00:38"
+    },
+    {
+      "name": "Religious Liberty",
+      "points": "10",
+      "respondents": "7880",
+      "questions": "6",
+      "expected_time": "00:01:00",
+      "bot_time": "0:00:12"
+    },
+    {
+      "name": "Feminism",
+      "points": "10",
+      "respondents": "8161",
+      "questions": "6",
+      "expected_time": "00:01:00",
+      "bot_time": "0:00:12"
+    },
+    {
+      "name": "Life and Sciences",
+      "points": "10",
+      "respondents": "2432",
+      "questions": "6",
+      "expected_time": "00:01:00",
+      "bot_time": "0:00:12"
+    },
+    {
+      "name": "FOMO",
+      "points": "10",
+      "respondents": "8146",
+      "questions": "6",
+      "expected_time": "00:01:00",
+      "bot_time": "0:00:12"
+    },
+    {
+      "name": "News",
+      "points": "20",
+      "respondents": "8610",
+      "questions": "10",
+      "expected_time": "00:01:40",
+      "bot_time": "0:00:17"
+    },
+    {
+      "name": "Top Five",
+      "points": "10",
+      "respondents": "969",
+      "questions": "5",
+      "expected_time": "00:00:50",
+      "bot_time": "0:00:22"
+    },
+    {
+      "name": "Public Speaking",
+      "points": "10",
+      "respondents": "999",
+      "questions": "5",
+      "expected_time": "00:00:50",
+      "bot_time": "0:00:22"
+    },
+    {
+      "name": "Top Five",
+      "points": "10",
+      "respondents": "1041",
+      "questions": "5",
+      "expected_time": "00:00:50",
+      "bot_time": "0:00:11"
+    },
+    {
+      "name": "Technology",
+      "points": "20",
+      "respondents": "8188",
+      "questions": "11",
+      "expected_time": "00:01:50",
+      "bot_time": "0:00:30"
+    },
+    {
+      "name": "Performance Groups",
+      "points": "25",
+      "respondents": "1235",
+      "questions": "12",
+      "expected_time": "00:02:00",
+      "bot_time": "0:00:44"
+    },
+    {
+      "name": "Sports and Politics",
+      "points": "15",
+      "respondents": "1399",
+      "questions": "7",
+      "expected_time": "00:01:10",
+      "bot_time": "0:00:21"
+    },
+    {
+      "name": "Resources",
+      "points": "15",
+      "respondents": "927",
+      "questions": "8",
+      "expected_time": "00:01:20",
+      "bot_time": "0:00:45"
+    },
+    {
+      "name": "Pulse Feedback",
+      "points": "10",
+      "respondents": "8178",
+      "questions": "5",
+      "expected_time": "00:00:50",
+      "bot_time": "0:00:30"
+    },
+    {
+      "name": "Questions for Hanlon",
+      "points": "0",
+      "respondents": "1062",
+      "questions": "1",
+      "expected_time": "00:00:10",
+      "bot_time": "0:00:19"
+    },
+    {
+      "name": "01/21: Top Q's",
+      "points": "10",
+      "respondents": "4269",
+      "questions": "5",
+      "expected_time": "00:00:50",
+      "bot_time": "0:00:17"
+    },
+    {
+      "name": "Never Have I Ever",
+      "points": "10",
+      "respondents": "6129",
+      "questions": "5",
+      "expected_time": "00:00:50",
+      "bot_time": "0:00:17"
+    },
+    {
+      "name": "01/20: Top Q's",
+      "points": "10",
+      "respondents": "6107",
+      "questions": "5",
+      "expected_time": "00:00:50",
+      "bot_time": "0:00:17"
+    },
+    {
+      "name": "01/19: Top Q's",
+      "points": "10",
+      "respondents": "6576",
+      "questions": "5",
+      "expected_time": "00:00:50",
+      "bot_time": "0:00:17"
     }
   ]
 }

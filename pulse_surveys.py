@@ -17,8 +17,11 @@ surveys_completed = 0
 question_answers = Web_Functions.generate_answers(75)
 while surveys_completed < num_surveys:
 
-    # navigate to surveys page 
+    # navigate to surveys page and sort by most recent surveys
     Web_Functions.open_surveys_page(driver)
+    Web_Functions.wait_until_element_appears(driver, 'date', find_type = By.ID)
+    newest_surveys_btn = driver.find_element_by_id('date')
+    newest_surveys_btn.click()
 
     # verify a survey card appears
     Web_Functions.wait_until_element_appears(driver, "survey-card")
@@ -26,7 +29,6 @@ while surveys_completed < num_surveys:
     # find all available web surveys
     web_surveys = Web_Functions.find_available_web_surveys(driver)
 
-    # open the first web survey available, save its stats
     curr_survey_text = web_surveys[0].text.split('\n')
     web_surveys[0].click()
     print(f"*** ANSWERING SURVEY: {curr_survey_text[2]} ***")
@@ -44,6 +46,7 @@ while surveys_completed < num_surveys:
 
     for question in question_buttons: 
         Web_Functions.answer_question(driver, question, question_answers)
+        time.sleep(1)
     
     print(f"\nSURVEY COMPLETED!\n")
     surveys_completed += 1

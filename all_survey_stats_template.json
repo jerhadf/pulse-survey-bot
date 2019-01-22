@@ -1,0 +1,16 @@
+{
+    "Total_Surveys": 0, 
+    "Web_Surveys": 0, 
+    "Mobile_Surveys": 0, 
+    "Mobile_Points_Available": 0, 
+    "Web_Points_Available": 0, 
+    "Total_Points_Available": 0, 
+    "Web_Time_Expected": "00:00:00", 
+    "Mobile_Time_Expected": "00:00:00",
+    "Total_Time_Expected": "00:00:00", 
+    "Web_Total_Respondents": 0, 
+    "Mobile_Total_Respondents": 0, 
+    "Total_Respondents": 0,
+    "Web_Survey_List": [],
+    "Mobile_Survey_List": []
+}

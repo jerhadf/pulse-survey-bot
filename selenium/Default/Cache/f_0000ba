@@ -1,0 +1,499 @@
+function myFunction() {
+    var x = document.getElementById("pwd");
+    if (x.type === "password") {
+        x.type = "text";
+    } else {
+        x.type = "password";
+    }
+}
+function callFunction() {
+    var x = document.getElementById("pwd3");
+    if (x.type === "password") {
+        x.type = "text";
+    } else {
+        x.type = "password";
+    }
+}
+function functionCall() {
+    var x = document.getElementById("pwd2");
+    if (x.type === "password") {
+        x.type = "text";
+    } else {
+        x.type = "password";
+    }
+}
+$(document).ready(function ()
+{
+    $("#myModal").on("hidden.bs.modal", function () {
+        $(':input', this).val('');
+    });
+    $('#openLogin_tab').on('click', function () {
+        $('#signupForm').css("display", "none");
+        $('#signinForm').css("display", "block");
+    });
+    $('#signUp_tab').on('click', function () {
+        $('#signupForm').css("display", "block");
+        $('#signinForm').css("display", "none");
+    });
+    $('.signup_from_reset').on('click', function () {
+        $('#signupForm').css("display", "block");
+        $('#resetcode').css("display", "none");
+    });
+//    $('.forgetpass').on('click', function () {
+//        $('#signinForm').css("display", "none");
+//        $('#resetcode').css("display", "block");
+//    });
+    $('.signUp_popup').on('click', function ()
+    {
+        $('#myModal').modal('show');
+        $('#signupForm').css("display", "block");
+        $('#signinForm').css("display", "none");
+        $('#resetcode').css("display", "none");
+    });
+    $('.signIn_popup').on('click', function ()
+    {
+        $('#myModal').modal('show');
+        $('#signupForm').css("display", "none");
+        $('#signinForm').css("display", "block");
+        $('#resetcode').css("display", "none");
+
+    });
+
+
+    $('#signupForm').on('click', 'button[type=submit]', function (e) {
+        e.preventDefault();
+        var country_code = $('.selected-dial-code').html();
+        document.getElementById("data_country_code").value = country_code;
+        $('.has-error').addClass('highlighterror');
+        $('.has-success').removeClass('highlighterror');
+        $('#mobileredclass').css("display", "block");
+        $('#mobilegreenclass').css("display", "none");
+        var validatorCheck = $(this).closest("form").data('bootstrapValidator');
+        
+        validatorCheck.validate();
+        if (!validatorCheck.isValid()) {
+            setTimeout(function () {
+                $('#mobileredclass').css("display", "block");
+            }, 300);
+        }
+        return false;
+    });
+    $('#signinForm').on('click', 'button[type=submit]', function (e) {
+        e.preventDefault();
+        $('.has-error').addClass('highlighterror');
+        $('.has-success').removeClass('highlighterror');
+
+        var validatorCheck =  $(this).closest("form").data('bootstrapValidator');
+        validatorCheck.validate();
+        if (!validatorCheck.isValid()) {
+            setTimeout(function () {
+                $('#mobileredclass').css("display", "block");
+            }, 300);
+        }
+        return false;
+    });
+    if (typeof $('#signupForm').bootstrapValidator !== 'undefined') {
+        $('#signupForm').bootstrapValidator({
+            err: {
+                container: function ($field, validator) {
+
+                    if (validator.isValid()) {
+                        $('.has-feedback').removeClass("has-error");
+                    } else {
+                        $('.has-feedback').addClass("has-error");
+                    }
+                }
+            },
+            feedbackIcons: {
+//                valid: 'fa fa-check',
+//                invalid: 'fa fa-close',
+                validating: 'glyphicon glyphicon-refresh'
+            },
+            fields: {
+                'data[User][name]': {
+                    trigger: 'blur',	
+                    validators: {
+                        notEmpty: {
+                            message: 'Name is required.'
+                        },
+                        regexp: {
+                            regexp: '^[a-zA-Z][a-zA-Z\\s]+$',
+                            message: 'Name is required.'
+                        }
+                    }
+                },
+                'data[User][email]': {
+		    trigger: 'blur',	
+                    validators: {
+                        notEmpty: {
+                            message: 'Email is required'
+                        },
+                        regexp: {
+                            regexp: '^[^@\\s]+@([^@\\s]+\\.)+[^@\\s]{2,4}$',
+                            message: 'Please enter a valid email address '
+                        }
+                    }
+                },
+                'data[User][password]': {
+                    trigger: 'blur',	
+                    validators: {
+                        notEmpty: {
+                            message: 'Password is required'
+                        },
+                        stringLength: {
+                            min: 8,
+                            message: 'Password should be atleast 8 character'
+                        }
+
+                    }
+                },
+                'data[User][code]': {
+                    trigger: 'blur',	
+                    validators: {
+                        notEmpty: {
+                            message: 'Country code is required',
+                        },
+                        regexp: {
+                            regexp: '^[0-9-+]+$',
+                            message: 'The value is not a valid mobile number'
+                        }
+                    }
+                },
+                'data[User][mobile]': {
+                    trigger: 'blur',	
+                    validators: {
+                        notEmpty: {
+                            message: 'Mobile Number is required',
+                        },
+                        stringLength: {
+                            min: 7, max:13,
+                            message: 'The value is not a valid mobile number'
+                        },
+                        regexp: {
+                            regexp: '^[0-9-+]+$',
+                            message: 'The value is not a valid mobile number'
+                        }
+                    }
+                }
+            }
+        }).on('success.form.bv', function (e) {
+            // Prevent form submission
+            e.preventDefault();
+            var country_code = $('.selected-dial-code').html();
+            document.getElementById("data_country_code").value = country_code;
+            var $form = $(e.target),
+                    validator = $form.data('bootstrapValidator'),
+                    submitButton = validator.getSubmitButton();
+            if (validator.isValid()) {
+                $("#signup_error_message, #mobileredclass").css("display", "none");
+                $('#ajax-loader').show();
+                $.ajax({
+                    url: '/users/signup?utm_source=community&utm_campaign=community_signup&utm_medium=community_signup',
+                    data: $('#signupForm').serialize(),
+                    type: 'POST',
+                    dataType: 'json',
+                    error: function (e) {
+                        $('#ajax-loader').hide();
+                    },
+                    success: function (data) {
+                        $('#ajax-loader').hide();
+
+                        if (data.status == "success" || data.status == "my-courses" || data.status == "lead") {
+
+                            location.reload();
+
+                        } else {
+                            $('#ajax-loader').hide();
+                            $(".newsignclik").show();
+                            $("#signup_error_message, #mobileredmsg").html('<i class="fa fa-exclamation-triangle"></i> ' + data.msg);
+                            $("#signup_error_message").css("display", "block");
+                            $('#mobilegreenclass').css("display", "none");
+                            $('#mobileredclass').css("display", "block");
+                        }
+                    }
+
+                });
+            }
+
+            return false;
+            // Do whatever you want here ...
+        }).on('error.field.bv', function (e, data) {
+
+            $('.defdisablesignup').prop('disabled', false).removeClass('disabled');
+
+        }).on('success.field.bv', function (e, data) {
+
+            $('.has-success').removeClass('highlighterror').removeClass('has-error');
+            if (data.fv.getInvalidFields().length > 0) {    // There is invalid field
+                $('.defdisablesignup').prop('disabled', false).removeClass('disabled');
+                $('#mobileredclass').css("display", "none");
+            }
+
+        });
+
+    }
+
+
+
+    if (typeof $('#signinForm').bootstrapValidator !== 'undefined') {
+
+        $('#signinForm').bootstrapValidator({
+            err: {
+                container: function ($field, validator) {
+
+                    if (validator.isValid()) {
+                        $('.has-feedback').removeClass("has-error");
+                    } else {
+                        $('.has-feedback').addClass("has-error");
+                    }
+
+                }
+            },
+            feedbackIcons: {
+//                valid: 'fa fa-check',
+//                invalid: 'fa fa-close',
+                validating: 'glyphicon glyphicon-refresh'
+            },
+            fields: {
+                'data[User][email]': {
+                    trigger: 'blur',	
+                    validators: {
+                        notEmpty: {
+                            message: 'Email is required'
+                        },
+                        regexp: {
+                            regexp: '^[^@\\s]+@([^@\\s]+\\.)+[^@\\s]{2,4}$',
+                            message: ' Please enter a valid email address'
+                        }
+                    }
+                },
+                'data[User][password]': {
+                    trigger: 'blur',	
+                    validators: {
+                        notEmpty: {
+                            message: 'Password is required'
+                        },
+                        stringLength: {
+                            min: 8,
+                            message: 'Password should be atleast 8 character'
+                        }
+                    }
+                }
+            }
+        }).on('success.form.bv', function (e) {
+            // Prevent form submission
+
+            e.preventDefault();
+            var $form = $(e.target),
+                    validator = $form.data('bootstrapValidator'),
+                    submitButton = validator.getSubmitButton();
+
+            if (validator.isValid()) {
+                $("#signin_error_message, #mobileredclass").css("display", "none");
+                $('#ajax-loader').show();
+                $('.defdisablesignin').removeClass('disabled');
+
+                $.ajax({
+                    url: '/users/signin',
+                    data: $('#signinForm').serialize(),
+                    type: 'POST',
+                    dataType: 'json',
+                    error: function () {
+                        $('#ajax-loader').hide();
+                    },
+                    success: function (data) {
+                        $('.defdisablesignin').removeClass('disabled');
+
+//                    $('#ajax-loader').hide();
+                        if (data.status == "success" || data.status == "my-courses" || data.status == "lead") {
+                            location.reload();
+
+                        } else {
+                            $('#ajax-loader').hide();
+                            $(".newsignclik").show();
+                            $("#signin_error_message").css("display", "block");
+                            $("#signin_error_message, #mobileredmsg").html('<i class="fa fa-exclamation-triangle"></i> ' + data.msg);
+                            $('#mobilegreenclass').css("display", "none");
+                            $('#mobileredclass').css("display", "block");
+                        }
+                    }
+                });
+            }
+            return false;
+            // Do whatever you want here ...
+        }).on('error.field.bv', function (e, data) {
+
+            $('.defdisablesignin').prop('disabled', false).removeClass('disabled');
+
+        }).on('success.field.bv', function (e, data) {
+            $('.has-success').removeClass('highlighterror').removeClass('has-error');
+            if (data.fv.getInvalidFields().length > 0) {    // There is invalid field
+                $('.defdisablesignin').prop('disabled', false).removeClass('disabled');
+                $('#mobileredclass').css("display", "none");
+            }
+
+        });
+
+    }
+
+    var flag_reset = true;
+    $("#Forgotnew , #resendcode").on('click', function (e) {
+        $('#otpfield, #verificationfield, #pwd2').val("");
+        var email = $('#inputName').val();
+        if (isEmail(email)) {
+            $('#signinForm').css("display", "none");
+            $('#resetcode').css("display", "block");
+            $('#ajax-loader').show();
+            e.preventDefault();
+
+            $.ajax({
+                url: '/users/process_forgot_password',
+                data: $('#signinForm').serialize(),
+                type: 'POST',
+                dataType: "json",
+                error: function () {
+                    $('#ajax-loader').hide();
+                },
+                success: function (data) {
+                    $('#ajax-loader').hide();
+                    if (data.status == "success") {
+                        $(".newsignclik").hide();
+                        $(".forgetpassnew").show();
+                        $(".verifycheck").show();
+                        $('#otpfield').removeClass('highlighterror');
+                        $('#pwd2').removeClass('highlighterror');
+                        $("#prefilledemail, #emailfield").val(data.email);
+                        $("#messages").addClass("greenalertnew");
+                        $("#messages").removeClass("redalertnew");
+                        $("#messages, #mobilegreenmsg").html('<i class="fa fa-check-circle"></i> ' + data.msg);
+                        $('#mobileredclass').css("display", "none");
+                        $('#mobilegreenclass').css("display", "block");
+                        if (flag_reset == true) {
+                            flag_reset = false;
+                            resetpass();
+                        }
+                    } else {
+                        $(".newsignclik").show();
+                        $("#signin_error_message").css("display", "block");
+                        $("#signin_error_message, #mobileredmsg").html('<i class="fa fa-exclamation-triangle"></i> ' + data.msg);
+                        $('#mobilegreenclass').css("display", "none");
+                        $('#mobileredclass').css("display", "block");
+                    }
+//                
+                }
+
+            });
+        } else {
+            $("#signin_error_message, #mobileredclass").css("display", "block");
+            $("#signin_error_message").removeClass("greenalertnew");
+            $("#signin_error_message").addClass("redalertnew");
+            $("#signin_error_message, #mobileredmsg").html('<i class="fa fa-exclamation-triangle"></i> ' + "Please enter your email id to reset password");
+        }
+    });
+
+
+    function isEmail(email) {
+
+        var regex = /^([a-zA-Z0-9_.+-])+\@(([a-zA-Z0-9-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+        return regex.test(email);
+    }
+
+    function resetpass() {
+        $("#passresetbutton").on('click', function (e) {
+            //$('#ajax-loader').show();
+            e.preventDefault();
+            //$(".forgetpassnew").hide();
+            new_pass = $.trim($('#pwd2').val());
+            if ((new_pass != '' && new_pass.toString().length >= 8) && ($('#otpfield').val() != '' || $("#verificationfield").val() != '')) {
+                $('#ajax-loader').show();
+                e.preventDefault();
+
+                $.ajax({
+                    url: '/lms_users/recover_password',
+                    data: $('#resetcode').serialize(),
+                    type: 'POST',
+                    dataType: "json",
+                    error: function () {
+                        $('#ajax-loader').hide();
+                    },
+                    success: function (data) {
+                        $('#ajax-loader').hide();
+                        if (data.status == "success") {
+                            $('#resetcode').css("display", "none");
+                            $('#signinForm').css("display", "block");
+                            $(".newsignclik").show();
+                            $(".forgetpassnew").hide();
+                            $("#signin_error_message").css("display", "block");
+                            $("#signin_error_message").removeClass("redalertnew");
+                            $("#signin_error_message").addClass("greenalertnew");
+                            $("#signin_error_message, #mobilegreenmsg").html('<i class="fa fa-check-circle"></i> ' + data.msg);
+                            $('#mobilegreenclass').css("display", "block");
+                            $('#inputName,#signupname,#pwd,#pwd3,#mobnum, #signupemail,#emailfield').val("");
+                            $('.defdisable').prop('disabled', true);
+
+                        } else {
+                            $('#otpfield').addClass('highlighterror');
+                            $('#pwd2').removeClass('highlighterror');
+                            $(".forgetpassnew").show();
+                            $("#messages").removeClass("greenalertnew");
+                            $("#messages").addClass("redalertnew");
+                            $('#messages, #mobileredmsg').html('<i class="fa fa-exclamation-triangle"></i> ' + data.msg);
+                            $('#mobilegreenclass').css("display", "none");
+                            $('#mobileredclass').css("display", "block");
+                        }
+
+                    }
+
+                });
+            } else {
+                $(".newsignclik").hide();
+                $(".forgetpassnew").show();
+                $("#messages").removeClass("greenalertnew");
+                $("#messages").addClass("redalertnew");
+                $('#mobilegreenclass').css("display", "none");
+                $('#mobileredclass').css("display", "block");
+                if ($('#otpfield').val() == '' && new_pass.toString().length > 8) {
+                    $('#otpfield').addClass('highlighterror');
+                    $('#pwd2').removeClass('highlighterror');
+                    $('#otpfield').focus();
+                    $('#messages, #mobileredmsg').html('<i class="fa fa-exclamation-triangle"></i> ' + "Please enter the OTP.");
+                } else if (new_pass.toString().length < 8 && $('#otpfield').val() != '') {
+                    $('#otpfield').removeClass('highlighterror');
+                    $('#pwd2').addClass('highlighterror');
+                    $('#pwd2').focus();
+                    $('#messages, #mobileredmsg').html('<i class="fa fa-exclamation-triangle"></i> ' + "Please enter 8 digit password.");
+                } else {
+                    $('#otpfield, #pwd2').addClass('highlighterror');
+                    if ($("#verificationfield").val() != '') {
+                        $('#pwd2').focus();
+                        $('#messages, #mobileredmsg').html('<i class="fa fa-exclamation-triangle"></i> ' + "Please enter 8 digit password.");
+                    } else {
+                        $('#otpfield').focus();
+                        $('#messages, #mobileredmsg').html('<i class="fa fa-exclamation-triangle"></i> ' + "Please enter a valid input.");
+                    }
+
+                }
+                return false;
+            }
+        });
+
+    }
+    
+    $('#logout_community').on('click', function () {
+            $('#ajax-loader').show();
+        $.ajax({
+                    url: '/signout',
+                    type: 'GET',
+                    dataType: 'json',
+                    error: function () {
+                        $('#ajax-loader').hide();
+                        location.reload();
+                    },
+                    success: function (data) {
+                        location.reload();
+                    }
+            });
+    });
+});
+        
+        
