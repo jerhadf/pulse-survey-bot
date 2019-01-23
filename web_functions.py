@@ -239,46 +239,23 @@ class Web_Functions():
 
         time.sleep(2)
 
-        try: 
-            Web_Functions.wait_until_element_appears(driver, "question-button")
-            submit_button = driver.find_elements_by_class_name("question-button")[-1]
-            submit_button.click()
-        except NoSuchElementException: 
-            print(f"NoSuchElementException in clicking submit_btn, trying to click next_btn")
-            Web_Functions.wait_until_element_appears(driver, "next-indicator-container ")
-            next_btn = driver.find_element_by_class_name("next-indicator-container ")
-            next_btn.click()
+        Web_Functions.wait_until_element_appears(driver, "question-button")
+        submit_button = driver.find_elements_by_class_name("question-button")[-1]
+        submit_button.click()
 
-        # continue to submit survey
-        try: 
-            Web_Functions.wait_until_element_appears(driver, "survey-submit-button")
-            final_submit_btn = driver.find_element_by_class_name("survey-submit-button")
-            final_submit_btn.click()
-        except NoSuchElementException: 
-            print(f"NoSuchElementException in clicking final_submit_btn, clicking submit_btn")
-            submit_btn = driver.find_elements_by_class_name("question-button")[-1]
-            submit_btn.click()
-            Web_Functions.wait_until_element_appears(driver, "survey-submit-button")
-            final_submit_btn = driver.find_element_by_class_name("survey-submit-button")
-            final_submit_btn.click()
+        Web_Functions.wait_until_element_appears(driver, "survey-submit-button")
+        final_submit_btn = driver.find_element_by_class_name("survey-submit-button")
+        final_submit_btn.click()
         
-        time.sleep(1)
+        time.sleep(.5)
 
         Web_Functions.check_if_too_fast(driver)
 
-        # find the take new survey button and click it to return to surveys page 
-        try: 
-            driver.find_element_by_xpath("//*[contains(text(), 'Take A Survey')]")
-        except NoSuchElementException:
-            Web_Functions.wait_until_element_appears(driver, 'survey-submit-button')
-            final_submit_btn = driver.find_element_by_class_name("survey-submit-button")
-            final_submit_btn.click()
-        finally:
-            time.sleep(1)
-            # navigate back to the homepage to ensure we go back to survey answering page
-            Web_Functions.wait_until_element_appears(driver, 'icon-container')
-            pulse_logo_btn = driver.find_element_by_class_name("icon-container")
-            pulse_logo_btn.click()
+        time.sleep(1)
+        # navigate back to the homepage to ensure we go back to survey answering page
+        Web_Functions.wait_until_element_appears(driver, 'icon-container')
+        pulse_logo_btn = driver.find_element_by_class_name("icon-container")
+        pulse_logo_btn.click()
 
     @staticmethod
     def check_if_too_fast(driver):
