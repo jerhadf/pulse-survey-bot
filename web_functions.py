@@ -266,7 +266,6 @@ class Web_Functions():
     @staticmethod
     def submit_survey(driver): 
         ''' Submits a finished survey ''' 
-        time.sleep(.5)
         if Web_Functions.wait_until_element_appears(driver, "question-button", wait_time=1):
             submit_btn = driver.find_elements_by_class_name("question-button")[-1]
             Web_Functions.click(driver, submit_btn)
@@ -275,9 +274,7 @@ class Web_Functions():
         final_submit_btn = driver.find_element_by_class_name("survey-submit-button")
         Web_Functions.click(driver, final_submit_btn)
 
-        time.sleep(.2)
         Web_Functions.check_if_too_fast(driver)
-        time.sleep(.5)
         # navigate back to the homepage to ensure we go back to survey answering page
         Web_Functions.wait_until_element_appears(driver, 'icon-container')
         pulse_logo_btn = driver.find_element_by_class_name("icon-container")
@@ -293,6 +290,8 @@ class Web_Functions():
             time.sleep(1)
             submit_btn = driver.find_elements_by_class_name("question-button")[-1]
             Web_Functions.click(driver, submit_btn)
+
+            Web_Functions.submit_survey(driver)
 
     
 
