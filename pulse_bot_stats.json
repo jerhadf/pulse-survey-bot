@@ -1,5 +1,5 @@
 {
-  "Total_Points_Accumulated": 5160,
+  "Total_Points_Accumulated": 5370,
   "Surveys_Completed": [
     {
       "name": "What's Your Type?",
@@ -3173,6 +3173,141 @@
       "questions": "5",
       "expected_time": "00:00:50",
       "bot_time": "0:00:08"
+    },
+    {
+      "name": "8/31: Top Q's",
+      "date_taken": "01/23/2019 02:34:30",
+      "points": "15",
+      "respondents": "10964",
+      "questions": "5",
+      "expected_time": "00:00:50",
+      "bot_time": "0:00:10"
+    },
+    {
+      "name": "Income",
+      "date_taken": "01/23/2019 02:34:44",
+      "points": "20",
+      "respondents": "10945",
+      "questions": "8",
+      "expected_time": "00:01:20",
+      "bot_time": "0:00:13"
+    },
+    {
+      "name": "College Rankings",
+      "date_taken": "01/23/2019 02:35:02",
+      "points": "20",
+      "respondents": "10845",
+      "questions": "10",
+      "expected_time": "00:01:40",
+      "bot_time": "0:00:17"
+    },
+    {
+      "name": "Foreplay",
+      "date_taken": "01/23/2019 02:35:14",
+      "points": "10",
+      "respondents": "10625",
+      "questions": "6",
+      "expected_time": "00:01:00",
+      "bot_time": "0:00:10"
+    },
+    {
+      "name": "8/28: Top Q's (2)",
+      "date_taken": "01/23/2019 02:35:25",
+      "points": "10",
+      "respondents": "10467",
+      "questions": "5",
+      "expected_time": "00:00:50",
+      "bot_time": "0:00:10"
+    },
+    {
+      "name": "8/29: Top Q's",
+      "date_taken": "01/23/2019 02:35:36",
+      "points": "10",
+      "respondents": "10425",
+      "questions": "5",
+      "expected_time": "00:00:50",
+      "bot_time": "0:00:09"
+    },
+    {
+      "name": "9/03: Top Q's",
+      "date_taken": "01/23/2019 02:35:46",
+      "points": "10",
+      "respondents": "10409",
+      "questions": "5",
+      "expected_time": "00:00:50",
+      "bot_time": "0:00:09"
+    },
+    {
+      "name": "Are You Busy?",
+      "date_taken": "01/23/2019 02:36:00",
+      "points": "15",
+      "respondents": "10407",
+      "questions": "6",
+      "expected_time": "00:01:00",
+      "bot_time": "0:00:12"
+    },
+    {
+      "name": "Labor Day",
+      "date_taken": "01/23/2019 02:36:13",
+      "points": "20",
+      "respondents": "10371",
+      "questions": "7",
+      "expected_time": "00:01:10",
+      "bot_time": "0:00:12"
+    },
+    {
+      "name": "09/02: Top Q's",
+      "date_taken": "01/23/2019 02:36:24",
+      "points": "10",
+      "respondents": "10178",
+      "questions": "5",
+      "expected_time": "00:00:50",
+      "bot_time": "0:00:09"
+    },
+    {
+      "name": "Socialism\u2013Capitalism",
+      "date_taken": "01/23/2019 02:36:37",
+      "points": "20",
+      "respondents": "10236",
+      "questions": "6",
+      "expected_time": "00:01:00",
+      "bot_time": "0:00:12"
+    },
+    {
+      "name": "Love",
+      "date_taken": "01/23/2019 02:36:51",
+      "points": "10",
+      "respondents": "10071",
+      "questions": "6",
+      "expected_time": "00:01:00",
+      "bot_time": "0:00:12"
+    },
+    {
+      "name": "8/19: Top Q's",
+      "date_taken": "01/23/2019 02:37:02",
+      "points": "15",
+      "respondents": "10062",
+      "questions": "5",
+      "expected_time": "00:00:50",
+      "bot_time": "0:00:10"
+    },
+    {
+      "name": "8/29: Top Q's",
+      "date_taken": "01/23/2019 02:37:13",
+      "points": "10",
+      "respondents": "10046",
+      "questions": "5",
+      "expected_time": "00:00:50",
+      "bot_time": "0:00:10"
+    },
+    {
+      "name": "8/23: Current Events",
+      "date_taken": "01/23/2019 02:37:24",
+      "points": "15",
+      "respondents": "9945",
+      "questions": "5",
+      "expected_time": "00:00:50",
+      "bot_time": "0:00:10"
     }
   ]
 }

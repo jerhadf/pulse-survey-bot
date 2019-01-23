@@ -5,7 +5,7 @@ from web_functions import Web_Functions
 
 driver = Web_Functions.open_site('https://collegepulse.com/app/answer') 
 
-num_surveys = 100
+num_surveys = 300
 surveys_completed = 0 
 question_answers = Web_Functions.generate_answers(75)
 

@@ -287,7 +287,7 @@ class Web_Functions():
             print(f"Submitted the survey too quickly! Trying again")
             go_back_btn = driver.find_element_by_class_name("go-back-container")
             Web_Functions.click(driver, go_back_btn)
-            time.sleep(1)
+            time.sleep(.5)
             submit_btn = driver.find_elements_by_class_name("question-button")[-1]
             Web_Functions.click(driver, submit_btn)
 
