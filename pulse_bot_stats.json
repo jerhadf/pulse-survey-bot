@@ -1,5 +1,5 @@
 {
-  "Total_Points_Accumulated": 5070,
+  "Total_Points_Accumulated": 5095,
   "Surveys_Completed": [
     {
       "name": "What's Your Type?",
@@ -3128,6 +3128,15 @@
       "questions": "5",
       "expected_time": "00:00:50",
       "bot_time": "0:00:17"
+    },
+    {
+      "name": "Feminism",
+      "date_taken": "01/23/2019 02:15:22",
+      "points": "25",
+      "respondents": "12649",
+      "questions": "8",
+      "expected_time": "00:01:20",
+      "bot_time": "0:00:02"
     }
   ]
 }

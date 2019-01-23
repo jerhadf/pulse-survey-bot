@@ -21,7 +21,6 @@ while surveys_completed < num_surveys:
 
     for question in curr_survey['question_btns']: 
         Web_Functions.answer_question(driver, question, question_answers)
-        time.sleep(.5)
     
     Web_Functions.submit_survey(driver)
 
