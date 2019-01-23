@@ -1,7 +1,7 @@
 import time
 import random
 import json
-from datetime import timedelta
+from datetime import timedelta, datetime
 from selenium import webdriver
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.common.action_chains import ActionChains
@@ -122,6 +122,7 @@ class Web_Functions():
         bot_stats["Total_Points_Accumulated"] += int(survey_points)
         bot_stats["Surveys_Completed"].append({
             "name" : survey_name, 
+            "date_taken": datetime.now().strftime('%m/%d/%Y %H:%M:%S'),
             "points" : survey_points, 
             "respondents" : survey_respondents, 
             "questions" : survey_questions,
@@ -238,17 +239,26 @@ class Web_Functions():
 
         time.sleep(2)
 
-        # continue to submit survey
         try: 
-            Web_Functions.wait_until_element_appears(driver, 'survey-submit-button')
-            final_submit_btn = driver.find_element_by_class_name("survey-submit-button")
-            final_submit_btn.click()
-        except (StaleElementReferenceException, NoSuchElementException) as error: 
-            print(f"Error caught, clicking submit button")
-            print(error)
+            Web_Functions.wait_until_element_appears(driver, "question-button")
             submit_button = driver.find_elements_by_class_name("question-button")[-1]
             submit_button.click()
-            Web_Functions.wait_until_element_appears(driver, 'survey-submit-button')
+        except NoSuchElementException: 
+            print(f"NoSuchElementException in clicking submit_btn, trying to click next_btn")
+            Web_Functions.wait_until_element_appears(driver, "next-indicator-container ")
+            next_btn = driver.find_element_by_class_name("next-indicator-container ")
+            next_btn.click()
+
+        # continue to submit survey
+        try: 
+            Web_Functions.wait_until_element_appears(driver, "survey-submit-button")
+            final_submit_btn = driver.find_element_by_class_name("survey-submit-button")
+            final_submit_btn.click()
+        except NoSuchElementException: 
+            print(f"NoSuchElementException in clicking final_submit_btn, clicking submit_btn")
+            submit_btn = driver.find_elements_by_class_name("question-button")[-1]
+            submit_btn.click()
+            Web_Functions.wait_until_element_appears(driver, "survey-submit-button")
             final_submit_btn = driver.find_element_by_class_name("survey-submit-button")
             final_submit_btn.click()
         

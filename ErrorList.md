@@ -124,3 +124,142 @@ Traceback (most recent call last):
     bot_stats["Total_Points_Accumulated"] += int(survey_points)
 ValueError: invalid literal for int() with base 10: 'Mobile Only'
 ```
+
+## Run 4, 1/22/19 : failure to click
+
+Might be able to fix this by moving to item with Action
+
+```python 
+... Answering question:
+ Who is the best U.S. President in history?
+[Asked by: Carnegie Mellon] ...
+# OPTION BOXES: 44 # ANSWER BOXES: 0 # CHECK BOXES: 0 # NUM BOXES: 0
+... Answering question:
+ Who is the worst U.S. President in history?
+[Asked by: Carnegie Mellon] ...
+# OPTION BOXES: 88 # ANSWER BOXES: 0 # CHECK BOXES: 0 # NUM BOXES: 0
+Traceback (most recent call last):
+  File "C:\Users\Guest User\Desktop\Coding\pulse-testing\tests\web_functions.py", line 215, in answer_question
+    option_chosen.click()
+  File "C:\Users\Guest User\AppData\Local\Programs\Python\Python37-32\lib\site-packages\selenium\webdriver\remote\webelement.py", line 80, in click
+    self._execute(Command.CLICK_ELEMENT)
+  File "C:\Users\Guest User\AppData\Local\Programs\Python\Python37-32\lib\site-packages\selenium\webdriver\remote\webelement.py", line 633, in _execute
+    return self._parent.execute(command, params)
+  File "C:\Users\Guest User\AppData\Local\Programs\Python\Python37-32\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\Guest User\AppData\Local\Programs\Python\Python37-32\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.WebDriverException: Message: unknown error: Element <div class="mc-option" data="William J. Clinton
+" data-reactid=".0.1.3.7.1.$=1$1.0.0.1:$William J=1 Clinton
+">...</div> is not clickable at point (1275, 546). Other element would receive the click: <div class="mc-option-text-container" data-reactid=".0.1.3.7.1.$=1$0.0.0.1:$William J=1 Clinton
+.1.0">...</div>
+  (Session info: chrome=71.0.3578.98)
+  (Driver info: chromedriver=2.45.615291 (ec3682e3c9061c10f26ea9e5cdcf3c53f3f74387),platform=Windows NT 10.0.17134 x86_64)
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "tests\pulse_surveys.py", line 44, in <module>
+    Web_Functions.answer_question(driver, question, question_answers)
+  File "C:\Users\Guest User\Desktop\Coding\pulse-testing\tests\web_functions.py", line 220, in answer_question
+    option_chosen.click()
+  File "C:\Users\Guest User\AppData\Local\Programs\Python\Python37-32\lib\site-packages\selenium\webdriver\remote\webelement.py", line 80, in click
+    self._execute(Command.CLICK_ELEMENT)
+  File "C:\Users\Guest User\AppData\Local\Programs\Python\Python37-32\lib\site-packages\selenium\webdriver\remote\webelement.py", line 633, in _execute
+    return self._parent.execute(command, params)
+  File "C:\Users\Guest User\AppData\Local\Programs\Python\Python37-32\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\Guest User\AppData\Local\Programs\Python\Python37-32\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.WebDriverException: Message: unknown error: Element <div class="mc-option" data="William J. Clinton
+" data-reactid=".0.1.3.7.1.$=1$1.0.0.1:$William J=1 Clinton
+">...</div> is not clickable at point (1275, 546). Other element would receive the click: <div class="mc-option-text-container" data-reactid=".0.1.3.7.1.$=1$0.0.0.1:$William J=1 Clinton
+.1.0">...</div>
+  (Session info: chrome=71.0.3578.98)
+  (Driver info: chromedriver=2.45.615291 (ec3682e3c9061c10f26ea9e5cdcf3c53f3f74387),platform=Windows NT 10.0.17134 x86_64)
+```
+
+## Run 5, 1/22/2019
+
+Did not find question-button-highlighted (same as Run 1)
+
+```python
+SURVEYS AVAILABLE: MOBILE - 2 | WEB - 6
+*** ANSWERING SURVEY: 15 ***
+Page timed out after 10, element 'question-button-highlighted' not found
+Traceback (most recent call last):
+  File "tests\pulse_surveys.py", line 38, in <module>
+    question_buttons.insert(0, driver.find_element_by_class_name("question-button-highlighted"))
+  File "C:\Users\Guest User\AppData\Local\Programs\Python\Python37-32\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 564, in find_element_by_class_name
+    return self.find_element(by=By.CLASS_NAME, value=name)
+  File "C:\Users\Guest User\AppData\Local\Programs\Python\Python37-32\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 978, in find_element
+    'value': value})['value']
+  File "C:\Users\Guest User\AppData\Local\Programs\Python\Python37-32\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\Guest User\AppData\Local\Programs\Python\Python37-32\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {"method":"class name","selector":"question-button-highlighted"}
+  (Session info: chrome=71.0.3578.98)
+  (Driver info: chromedriver=2.45.615291 (ec3682e3c9061c10f26ea9e5cdcf3c53f3f74387),platform=Windows NT 10.0.17134 x86_64)
+```
+
+## Run 6, 1/22/2019
+
+Did not find question-button-highlighted (same as Run 5)
+
+```python
+SURVEYS AVAILABLE: MOBILE - 1 | WEB - 7
+*** ANSWERING SURVEY: Social Media Use ***
+Page timed out after 10, element 'question-button-highlighted' not found
+Traceback (most recent call last):
+  File "tests\pulse_surveys.py", line 38, in <module>
+    question_buttons.insert(0, driver.find_element_by_class_name("question-button-highlighted"))
+  File "C:\Users\Guest User\AppData\Local\Programs\Python\Python37-32\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 564, in find_element_by_class_name
+    return self.find_element(by=By.CLASS_NAME, value=name)
+  File "C:\Users\Guest User\AppData\Local\Programs\Python\Python37-32\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 978, in find_element
+    'value': value})['value']
+  File "C:\Users\Guest User\AppData\Local\Programs\Python\Python37-32\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\Guest User\AppData\Local\Programs\Python\Python37-32\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {"method":"class name","selector":"question-button-highlighted"}
+  (Session info: chrome=71.0.3578.98)
+  (Driver info: chromedriver=2.45.615291 (ec3682e3c9061c10f26ea9e5cdcf3c53f3f74387),platform=Windows NT 10.0.17134 x86_64)
+```
+
+## Run 7, 1/22/2019
+
+Did not find question-button-highlighted (same as Run 6)
+
+```python
+SURVEY COMPLETED!
+
+Page timed out after 1, element 'too-fast-message' not found
+
+SURVEYS AVAILABLE: MOBILE - 8 | WEB - 0
+No web surveys found, proceeding to another random page (pg. 2)
+
+SURVEYS AVAILABLE: MOBILE - 8 | WEB - 0
+No web surveys found, proceeding to another random page (pg. 12)
+
+SURVEYS AVAILABLE: MOBILE - 8 | WEB - 0
+No web surveys found, proceeding to another random page (pg. 1)
+
+SURVEYS AVAILABLE: MOBILE - 3 | WEB - 5
+*** ANSWERING SURVEY: Would You Rather? ***
+Page timed out after 10, element 'question-button-highlighted' not found
+Traceback (most recent call last):
+  File "tests\pulse_surveys.py", line 38, in <module>
+    question_buttons.insert(0, driver.find_element_by_class_name("question-button-highlighted"))
+  File "C:\Users\Guest User\AppData\Local\Programs\Python\Python37-32\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 564, in find_element_by_class_name
+    return self.find_element(by=By.CLASS_NAME, value=name)
+  File "C:\Users\Guest User\AppData\Local\Programs\Python\Python37-32\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 978, in find_element
+    'value': value})['value']
+  File "C:\Users\Guest User\AppData\Local\Programs\Python\Python37-32\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\Guest User\AppData\Local\Programs\Python\Python37-32\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {"method":"class name","selector":"question-button-highlighted"}
+  (Session info: chrome=71.0.3578.98)
+  (Driver info: chromedriver=2.45.615291 (ec3682e3c9061c10f26ea9e5cdcf3c53f3f74387),platform=Windows NT 10.0.17134 x86_64)
