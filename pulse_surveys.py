@@ -29,6 +29,6 @@ while surveys_completed < num_surveys:
     Web_Functions.save_survey_stats(curr_survey['text'], elapsed_time)
 
     surveys_completed += 1
-    print(f"\nSURVEY COMPLETED! surveys completed in this run: {surveys_completed}")
+    print(f"\nSURVEY COMPLETED in {elapsed_time} secs! surveys completed in this run: {surveys_completed}")
 
 driver.quit()

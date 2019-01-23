@@ -222,6 +222,7 @@ class Web_Functions():
 
         # scroll to top of window 
         driver.execute_script("scrollBy(0,250);")
+        time.sleep(.1)
         Web_Functions.click(driver, question)
   
         # print out the current question 
@@ -240,6 +241,7 @@ class Web_Functions():
             num_boxes = driver.find_elements_by_id("numeric-input-box")
 
         print(f"# OPTION BOXES: {len(input_boxes)} # ANSWER BOXES: {len(answer_boxes)} # NUM BOXES: {len(num_boxes)}")
+        time.sleep(.2)
 
         # answer the question depending on the input type
         if answer_boxes: 
@@ -261,7 +263,7 @@ class Web_Functions():
         else: 
             print(f"New input type on question {question}!")
         
-        time.sleep(.3)
+        time.sleep(.5)
 
     @staticmethod
     def submit_survey(driver): 
@@ -275,6 +277,9 @@ class Web_Functions():
         Web_Functions.click(driver, final_submit_btn)
 
         Web_Functions.check_if_too_fast(driver)
+
+        time.sleep(.5)
+
         # navigate back to the homepage to ensure we go back to survey answering page
         Web_Functions.wait_until_element_appears(driver, 'icon-container')
         pulse_logo_btn = driver.find_element_by_class_name("icon-container")
@@ -285,12 +290,13 @@ class Web_Functions():
         ''' If too fast message appears, wait a few seconds and then resubmit '''
         if Web_Functions.wait_until_element_appears(driver, 'too-fast-message', wait_time=1): 
             print(f"Submitted the survey too quickly! Trying again")
+            Web_Functions.wait_until_element_appears(driver, 'go-back-container', wait_time=1)
             go_back_btn = driver.find_element_by_class_name("go-back-container")
             Web_Functions.click(driver, go_back_btn)
-            time.sleep(.5)
+            time.sleep(.75)
+            Web_Functions.wait_until_element_appears(driver, 'question-button', wait_time=1)
             submit_btn = driver.find_elements_by_class_name("question-button")[-1]
             Web_Functions.click(driver, submit_btn)
-
             Web_Functions.submit_survey(driver)
 
     

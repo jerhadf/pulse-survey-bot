@@ -1,5 +1,5 @@
 {
-  "Total_Points_Accumulated": 5565,
+  "Total_Points_Accumulated": 5775,
   "Surveys_Completed": [
     {
       "name": "What's Your Type?",
@@ -3425,6 +3425,168 @@
       "questions": "5",
       "expected_time": "00:00:50",
       "bot_time": "0:00:10"
+    },
+    {
+      "name": "8/30: Top Q's",
+      "date_taken": "01/23/2019 02:40:19",
+      "points": "10",
+      "respondents": "9348",
+      "questions": "5",
+      "expected_time": "00:00:50",
+      "bot_time": "0:00:10"
+    },
+    {
+      "name": "8/13: Top Q's",
+      "date_taken": "01/23/2019 02:40:30",
+      "points": "10",
+      "respondents": "9466",
+      "questions": "5",
+      "expected_time": "00:00:50",
+      "bot_time": "0:00:10"
+    },
+    {
+      "name": "Real or Fake?",
+      "date_taken": "01/23/2019 02:40:54",
+      "points": "20",
+      "respondents": "9312",
+      "questions": "13",
+      "expected_time": "00:02:10",
+      "bot_time": "0:00:23"
+    },
+    {
+      "name": "8/15: Top Q's",
+      "date_taken": "01/23/2019 02:46:11",
+      "points": "10",
+      "respondents": "9300",
+      "questions": "5",
+      "expected_time": "00:00:50",
+      "bot_time": "0:00:10"
+    },
+    {
+      "name": "8/30: Top Q's",
+      "date_taken": "01/23/2019 02:46:23",
+      "points": "10",
+      "respondents": "9186",
+      "questions": "5",
+      "expected_time": "00:00:50",
+      "bot_time": "0:00:11"
+    },
+    {
+      "name": "Pulse Growth",
+      "date_taken": "01/23/2019 02:46:35",
+      "points": "20",
+      "respondents": "9112",
+      "questions": "5",
+      "expected_time": "00:00:50",
+      "bot_time": "0:00:10"
+    },
+    {
+      "name": "Graduate School",
+      "date_taken": "01/23/2019 02:46:45",
+      "points": "10",
+      "respondents": "9063",
+      "questions": "4",
+      "expected_time": "00:00:40",
+      "bot_time": "0:00:09"
+    },
+    {
+      "name": "8/10: Top Q's (2)",
+      "date_taken": "01/23/2019 02:47:16",
+      "points": "10",
+      "respondents": "9010",
+      "questions": "5",
+      "expected_time": "00:00:50",
+      "bot_time": "0:00:10"
+    },
+    {
+      "name": "8/10: Top Q's (2)",
+      "date_taken": "01/23/2019 02:48:38",
+      "points": "10",
+      "respondents": "9010",
+      "questions": "5",
+      "expected_time": "00:00:50",
+      "bot_time": "0:00:10"
+    },
+    {
+      "name": "9/24: Top Q's",
+      "date_taken": "01/23/2019 02:48:51",
+      "points": "10",
+      "respondents": "8927",
+      "questions": "5",
+      "expected_time": "00:00:50",
+      "bot_time": "0:00:11"
+    },
+    {
+      "name": "Alcohol",
+      "date_taken": "01/23/2019 02:49:02",
+      "points": "10",
+      "respondents": "8829",
+      "questions": "5",
+      "expected_time": "00:00:50",
+      "bot_time": "0:00:10"
+    },
+    {
+      "name": "9/05: Top Q's",
+      "date_taken": "01/23/2019 02:49:14",
+      "points": "10",
+      "respondents": "8810",
+      "questions": "5",
+      "expected_time": "00:00:50",
+      "bot_time": "0:00:10"
+    },
+    {
+      "name": "9/21: Top Q's",
+      "date_taken": "01/23/2019 02:49:25",
+      "points": "15",
+      "respondents": "8740",
+      "questions": "5",
+      "expected_time": "00:00:50",
+      "bot_time": "0:00:10"
+    },
+    {
+      "name": "9/21: Top Q's",
+      "date_taken": "01/23/2019 02:49:37",
+      "points": "15",
+      "respondents": "8740",
+      "questions": "5",
+      "expected_time": "00:00:50",
+      "bot_time": "0:00:10"
+    },
+    {
+      "name": "9/07: Top Q's",
+      "date_taken": "01/23/2019 02:49:48",
+      "points": "10",
+      "respondents": "8698",
+      "questions": "5",
+      "expected_time": "00:00:50",
+      "bot_time": "0:00:10"
+    },
+    {
+      "name": "High School",
+      "date_taken": "01/23/2019 02:50:00",
+      "points": "10",
+      "respondents": "8680",
+      "questions": "5",
+      "expected_time": "00:00:50",
+      "bot_time": "0:00:11"
+    },
+    {
+      "name": "8/12: Top Q's",
+      "date_taken": "01/23/2019 02:50:11",
+      "points": "10",
+      "respondents": "8736",
+      "questions": "5",
+      "expected_time": "00:00:50",
+      "bot_time": "0:00:10"
+    },
+    {
+      "name": "Never Have I Ever",
+      "date_taken": "01/23/2019 02:50:23",
+      "points": "10",
+      "respondents": "8628",
+      "questions": "5",
+      "expected_time": "00:00:50",
+      "bot_time": "0:00:11"
     }
   ]
 }
