@@ -1,5 +1,5 @@
 {
-  "Total_Points_Accumulated": 5370,
+  "Total_Points_Accumulated": 5565,
   "Surveys_Completed": [
     {
       "name": "What's Your Type?",
@@ -3305,6 +3305,123 @@
       "date_taken": "01/23/2019 02:37:24",
       "points": "15",
       "respondents": "9945",
+      "questions": "5",
+      "expected_time": "00:00:50",
+      "bot_time": "0:00:10"
+    },
+    {
+      "name": "Extraterrestrial Life",
+      "date_taken": "01/23/2019 02:37:36",
+      "points": "15",
+      "respondents": "10026",
+      "questions": "6",
+      "expected_time": "00:01:00",
+      "bot_time": "0:00:10"
+    },
+    {
+      "name": "Animal Testing",
+      "date_taken": "01/23/2019 02:37:49",
+      "points": "15",
+      "respondents": "9854",
+      "questions": "6",
+      "expected_time": "00:01:00",
+      "bot_time": "0:00:12"
+    },
+    {
+      "name": "Social Networks",
+      "date_taken": "01/23/2019 02:38:08",
+      "points": "20",
+      "respondents": "9845",
+      "questions": "9",
+      "expected_time": "00:01:30",
+      "bot_time": "0:00:17"
+    },
+    {
+      "name": "08/24: Top Q's",
+      "date_taken": "01/23/2019 02:38:18",
+      "points": "10",
+      "respondents": "9776",
+      "questions": "5",
+      "expected_time": "00:00:50",
+      "bot_time": "0:00:10"
+    },
+    {
+      "name": "Favorability Ratings",
+      "date_taken": "01/23/2019 02:38:37",
+      "points": "20",
+      "respondents": "9767",
+      "questions": "10",
+      "expected_time": "00:01:40",
+      "bot_time": "0:00:18"
+    },
+    {
+      "name": "8/9: Top Q's (2)",
+      "date_taken": "01/23/2019 02:38:49",
+      "points": "10",
+      "respondents": "9692",
+      "questions": "6",
+      "expected_time": "00:01:00",
+      "bot_time": "0:00:10"
+    },
+    {
+      "name": "8/30: Current Events",
+      "date_taken": "01/23/2019 02:39:00",
+      "points": "10",
+      "respondents": "9665",
+      "questions": "5",
+      "expected_time": "00:00:50",
+      "bot_time": "0:00:10"
+    },
+    {
+      "name": "9/02: Top Q's",
+      "date_taken": "01/23/2019 02:39:11",
+      "points": "10",
+      "respondents": "9638",
+      "questions": "5",
+      "expected_time": "00:00:50",
+      "bot_time": "0:00:10"
+    },
+    {
+      "name": "8/18: Top Q's",
+      "date_taken": "01/23/2019 02:39:23",
+      "points": "15",
+      "respondents": "9598",
+      "questions": "6",
+      "expected_time": "00:01:00",
+      "bot_time": "0:00:11"
+    },
+    {
+      "name": "8/25: Top Q's",
+      "date_taken": "01/23/2019 02:39:35",
+      "points": "10",
+      "respondents": "9577",
+      "questions": "5",
+      "expected_time": "00:00:50",
+      "bot_time": "0:00:10"
+    },
+    {
+      "name": "9/01: Top Q's",
+      "date_taken": "01/23/2019 02:39:46",
+      "points": "10",
+      "respondents": "9500",
+      "questions": "5",
+      "expected_time": "00:00:50",
+      "bot_time": "0:00:10"
+    },
+    {
+      "name": "9/17: Top Q's",
+      "date_taken": "01/23/2019 02:39:56",
+      "points": "40",
+      "respondents": "9481",
+      "questions": "5",
+      "expected_time": "00:00:50",
+      "bot_time": "0:00:09"
+    },
+    {
+      "name": "08/27: Top Q's",
+      "date_taken": "01/23/2019 02:40:08",
+      "points": "10",
+      "respondents": "9370",
       "questions": "5",
       "expected_time": "00:00:50",
       "bot_time": "0:00:10"

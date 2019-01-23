@@ -19,8 +19,8 @@ for i in range(1, len(page_numbers) + 1):
     Web_Functions.wait_until_element_appears(driver, str(i), By.ID)
     page_number = driver.find_element_by_id(str(i))
     print(f"... clicking page {page_number.text} button ...")
-    ActionChains(driver).move_to_element(page_number).click(page_number).perform() 
-
+    Web_Functions.click(driver, page_number)
+    
     time.sleep(3)
     surveys = Web_Functions.find_available_surveys(driver, type="all")
     web = surveys[0]
