@@ -1,5 +1,5 @@
 {
-  "Total_Points_Accumulated": 5775,
+  "Total_Points_Accumulated": 7590,
   "Surveys_Completed": [
     {
       "name": "What's Your Type?",
@@ -3587,6 +3587,1653 @@
       "questions": "5",
       "expected_time": "00:00:50",
       "bot_time": "0:00:11"
+    },
+    {
+      "name": "Would You Rather?",
+      "date_taken": "01/23/2019 02:50:35",
+      "points": "10",
+      "respondents": "8614",
+      "questions": "5",
+      "expected_time": "00:00:50",
+      "bot_time": "0:00:10"
+    },
+    {
+      "name": "Would You Rather?",
+      "date_taken": "01/23/2019 02:51:38",
+      "points": "10",
+      "respondents": "8576",
+      "questions": "5",
+      "expected_time": "00:00:50",
+      "bot_time": "0:00:11"
+    },
+    {
+      "name": "Prisoner's Dilemma",
+      "date_taken": "01/23/2019 02:51:50",
+      "points": "10",
+      "respondents": "8526",
+      "questions": "5",
+      "expected_time": "00:00:50",
+      "bot_time": "0:00:11"
+    },
+    {
+      "name": "12/11: Top Q's",
+      "date_taken": "01/23/2019 02:52:12",
+      "points": "10",
+      "respondents": "8516",
+      "questions": "5",
+      "expected_time": "00:00:50",
+      "bot_time": "0:00:10"
+    },
+    {
+      "name": "9/23: Top Q's",
+      "date_taken": "01/23/2019 02:52:24",
+      "points": "10",
+      "respondents": "8494",
+      "questions": "5",
+      "expected_time": "00:00:50",
+      "bot_time": "0:00:11"
+    },
+    {
+      "name": "Fears",
+      "date_taken": "01/23/2019 02:52:46",
+      "points": "20",
+      "respondents": "8461",
+      "questions": "11",
+      "expected_time": "00:01:50",
+      "bot_time": "0:00:22"
+    },
+    {
+      "name": "Never Have I Ever...",
+      "date_taken": "01/23/2019 02:52:59",
+      "points": "10",
+      "respondents": "8117",
+      "questions": "5",
+      "expected_time": "00:00:50",
+      "bot_time": "0:00:10"
+    },
+    {
+      "name": "10/29: Top Q's",
+      "date_taken": "01/23/2019 02:53:11",
+      "points": "10",
+      "respondents": "7400",
+      "questions": "5",
+      "expected_time": "00:00:50",
+      "bot_time": "0:00:10"
+    },
+    {
+      "name": "09/16/18: Top Questions Dartmouth",
+      "date_taken": "01/23/2019 02:53:25",
+      "points": "5",
+      "respondents": "205",
+      "questions": "5",
+      "expected_time": "00:00:50",
+      "bot_time": "0:00:11"
+    },
+    {
+      "name": "9/28: Top Q's",
+      "date_taken": "01/23/2019 02:53:37",
+      "points": "10",
+      "respondents": "7790",
+      "questions": "5",
+      "expected_time": "00:00:50",
+      "bot_time": "0:00:10"
+    },
+    {
+      "name": "9/25: Top Q's",
+      "date_taken": "01/23/2019 02:53:53",
+      "points": "10",
+      "respondents": "7789",
+      "questions": "5",
+      "expected_time": "00:00:50",
+      "bot_time": "0:00:14"
+    },
+    {
+      "name": "9/25: Top Q's",
+      "date_taken": "01/23/2019 02:54:05",
+      "points": "10",
+      "respondents": "7789",
+      "questions": "5",
+      "expected_time": "00:00:50",
+      "bot_time": "0:00:10"
+    },
+    {
+      "name": "#MeToo",
+      "date_taken": "01/23/2019 02:54:21",
+      "points": "10",
+      "respondents": "7952",
+      "questions": "7",
+      "expected_time": "00:01:10",
+      "bot_time": "0:00:15"
+    },
+    {
+      "name": "Affirmative Action",
+      "date_taken": "01/23/2019 02:54:34",
+      "points": "10",
+      "respondents": "6936",
+      "questions": "6",
+      "expected_time": "00:01:00",
+      "bot_time": "0:00:10"
+    },
+    {
+      "name": "9/12: Top Q's",
+      "date_taken": "01/23/2019 02:54:46",
+      "points": "10",
+      "respondents": "8056",
+      "questions": "5",
+      "expected_time": "00:00:50",
+      "bot_time": "0:00:11"
+    },
+    {
+      "name": "Post-Grad Predictions",
+      "date_taken": "01/23/2019 02:55:21",
+      "points": "15",
+      "respondents": "6896",
+      "questions": "7",
+      "expected_time": "00:01:10",
+      "bot_time": "0:00:23"
+    },
+    {
+      "name": "Course Name Quiz",
+      "date_taken": "01/23/2019 02:55:45",
+      "points": "15",
+      "respondents": "8313",
+      "questions": "12",
+      "expected_time": "00:02:00",
+      "bot_time": "0:00:21"
+    },
+    {
+      "name": "Personal Dialect",
+      "date_taken": "01/23/2019 02:55:57",
+      "points": "10",
+      "respondents": "8445",
+      "questions": "5",
+      "expected_time": "00:00:50",
+      "bot_time": "0:00:10"
+    },
+    {
+      "name": "10/19: Top Q's",
+      "date_taken": "01/23/2019 02:56:10",
+      "points": "10",
+      "respondents": "7273",
+      "questions": "5",
+      "expected_time": "00:00:50",
+      "bot_time": "0:00:11"
+    },
+    {
+      "name": "11/14: Top Q's",
+      "date_taken": "01/23/2019 02:56:22",
+      "points": "10",
+      "respondents": "8020",
+      "questions": "5",
+      "expected_time": "00:00:50",
+      "bot_time": "0:00:11"
+    },
+    {
+      "name": "11/12: Current Event",
+      "date_taken": "01/23/2019 02:56:35",
+      "points": "10",
+      "respondents": "7069",
+      "questions": "5",
+      "expected_time": "00:00:50",
+      "bot_time": "0:00:10"
+    },
+    {
+      "name": "Post-Grad Plans",
+      "date_taken": "01/23/2019 02:56:47",
+      "points": "15",
+      "respondents": "8435",
+      "questions": "6",
+      "expected_time": "00:01:00",
+      "bot_time": "0:00:11"
+    },
+    {
+      "name": "12/05: Top Q's",
+      "date_taken": "01/23/2019 02:57:01",
+      "points": "10",
+      "respondents": "7731",
+      "questions": "5",
+      "expected_time": "00:00:50",
+      "bot_time": "0:00:11"
+    },
+    {
+      "name": "9/15: Top Q's",
+      "date_taken": "01/23/2019 02:57:34",
+      "points": "10",
+      "respondents": "7489",
+      "questions": "5",
+      "expected_time": "00:00:50",
+      "bot_time": "0:00:10"
+    },
+    {
+      "name": "10/01: Top Q's",
+      "date_taken": "01/23/2019 02:57:46",
+      "points": "10",
+      "respondents": "7624",
+      "questions": "5",
+      "expected_time": "00:00:50",
+      "bot_time": "0:00:10"
+    },
+    {
+      "name": "10/10: Top Q's",
+      "date_taken": "01/23/2019 02:57:58",
+      "points": "10",
+      "respondents": "7611",
+      "questions": "5",
+      "expected_time": "00:00:50",
+      "bot_time": "0:00:10"
+    },
+    {
+      "name": "9/16: Top Q's",
+      "date_taken": "01/23/2019 02:58:12",
+      "points": "10",
+      "respondents": "6243",
+      "questions": "5",
+      "expected_time": "00:00:50",
+      "bot_time": "0:00:12"
+    },
+    {
+      "name": "8/28: Top Q's",
+      "date_taken": "01/23/2019 02:58:25",
+      "points": "10",
+      "respondents": "8252",
+      "questions": "6",
+      "expected_time": "00:01:00",
+      "bot_time": "0:00:11"
+    },
+    {
+      "name": "10/16: Top Q's",
+      "date_taken": "01/23/2019 02:58:38",
+      "points": "10",
+      "respondents": "7724",
+      "questions": "5",
+      "expected_time": "00:00:50",
+      "bot_time": "0:00:11"
+    },
+    {
+      "name": "10/11: Top Q's",
+      "date_taken": "01/23/2019 02:58:51",
+      "points": "10",
+      "respondents": "7275",
+      "questions": "5",
+      "expected_time": "00:00:50",
+      "bot_time": "0:00:11"
+    },
+    {
+      "name": "Compared to Average",
+      "date_taken": "01/23/2019 02:59:04",
+      "points": "10",
+      "respondents": "7326",
+      "questions": "6",
+      "expected_time": "00:01:00",
+      "bot_time": "0:00:11"
+    },
+    {
+      "name": "Police Officers",
+      "date_taken": "01/23/2019 02:59:23",
+      "points": "15",
+      "respondents": "7687",
+      "questions": "9",
+      "expected_time": "00:01:30",
+      "bot_time": "0:00:17"
+    },
+    {
+      "name": "FLASH SALE: Overlord tickets",
+      "date_taken": "01/23/2019 02:59:47",
+      "points": "5",
+      "respondents": "310",
+      "questions": "1",
+      "expected_time": "00:00:10",
+      "bot_time": "0:00:04"
+    },
+    {
+      "name": "11/16: Top Q's",
+      "date_taken": "01/23/2019 02:59:59",
+      "points": "10",
+      "respondents": "8427",
+      "questions": "5",
+      "expected_time": "00:00:50",
+      "bot_time": "0:00:10"
+    },
+    {
+      "name": "9/19: Top Q's",
+      "date_taken": "01/23/2019 03:00:11",
+      "points": "10",
+      "respondents": "7926",
+      "questions": "5",
+      "expected_time": "00:00:50",
+      "bot_time": "0:00:10"
+    },
+    {
+      "name": "Cryptocurrency",
+      "date_taken": "01/23/2019 03:00:45",
+      "points": "20",
+      "respondents": "7901",
+      "questions": "8",
+      "expected_time": "00:01:20",
+      "bot_time": "0:00:16"
+    },
+    {
+      "name": "Real or Fake: Pulse Stats",
+      "date_taken": "01/23/2019 03:00:58",
+      "points": "10",
+      "respondents": "6812",
+      "questions": "10",
+      "expected_time": "00:01:40",
+      "bot_time": "0:00:11"
+    },
+    {
+      "name": "10/21: Top Q's",
+      "date_taken": "01/23/2019 03:01:13",
+      "points": "10",
+      "respondents": "7291",
+      "questions": "5",
+      "expected_time": "00:00:50",
+      "bot_time": "0:00:12"
+    },
+    {
+      "name": "Student Government",
+      "date_taken": "01/23/2019 03:01:25",
+      "points": "10",
+      "respondents": "6231",
+      "questions": "6",
+      "expected_time": "00:01:00",
+      "bot_time": "0:00:10"
+    },
+    {
+      "name": "9/06: Top Q's",
+      "date_taken": "01/23/2019 03:01:39",
+      "points": "10",
+      "respondents": "7811",
+      "questions": "7",
+      "expected_time": "00:01:10",
+      "bot_time": "0:00:12"
+    },
+    {
+      "name": "9/06: Top Q's",
+      "date_taken": "01/23/2019 03:02:07",
+      "points": "10",
+      "respondents": "7811",
+      "questions": "7",
+      "expected_time": "00:01:10",
+      "bot_time": "0:00:15"
+    },
+    {
+      "name": "Would You Rather?",
+      "date_taken": "01/23/2019 03:02:19",
+      "points": "10",
+      "respondents": "7190",
+      "questions": "5",
+      "expected_time": "00:00:50",
+      "bot_time": "0:00:11"
+    },
+    {
+      "name": "9/14: Top Q's",
+      "date_taken": "01/23/2019 03:02:33",
+      "points": "10",
+      "respondents": "7262",
+      "questions": "5",
+      "expected_time": "00:00:50",
+      "bot_time": "0:00:12"
+    },
+    {
+      "name": "10/13: Top Q's",
+      "date_taken": "01/23/2019 03:02:45",
+      "points": "10",
+      "respondents": "6725",
+      "questions": "5",
+      "expected_time": "00:00:50",
+      "bot_time": "0:00:10"
+    },
+    {
+      "name": "9/24: Top Q's",
+      "date_taken": "01/23/2019 03:02:59",
+      "points": "10",
+      "respondents": "7588",
+      "questions": "5",
+      "expected_time": "00:00:50",
+      "bot_time": "0:00:11"
+    },
+    {
+      "name": "09/29/18: Dartmouth Top Questions",
+      "date_taken": "01/23/2019 03:03:17",
+      "points": "5",
+      "respondents": "210",
+      "questions": "3",
+      "expected_time": "00:00:30",
+      "bot_time": "0:00:16"
+    },
+    {
+      "name": "10/26: Top Q's",
+      "date_taken": "01/23/2019 03:03:29",
+      "points": "10",
+      "respondents": "6986",
+      "questions": "5",
+      "expected_time": "00:00:50",
+      "bot_time": "0:00:10"
+    },
+    {
+      "name": "9/03: Top Q's",
+      "date_taken": "01/23/2019 03:03:41",
+      "points": "10",
+      "respondents": "8392",
+      "questions": "5",
+      "expected_time": "00:00:50",
+      "bot_time": "0:00:10"
+    },
+    {
+      "name": "8/15: Top Q's",
+      "date_taken": "01/23/2019 03:03:54",
+      "points": "10",
+      "respondents": "7928",
+      "questions": "6",
+      "expected_time": "00:01:00",
+      "bot_time": "0:00:11"
+    },
+    {
+      "name": "09/23/18: Dartmouth Top Questions",
+      "date_taken": "01/23/2019 03:04:06",
+      "points": "5",
+      "respondents": "214",
+      "questions": "3",
+      "expected_time": "00:00:30",
+      "bot_time": "0:00:10"
+    },
+    {
+      "name": "11/03: Top Q's",
+      "date_taken": "01/23/2019 03:04:20",
+      "points": "10",
+      "respondents": "7466",
+      "questions": "5",
+      "expected_time": "00:00:50",
+      "bot_time": "0:00:12"
+    },
+    {
+      "name": "10/24: Top Q's",
+      "date_taken": "01/23/2019 03:04:32",
+      "points": "10",
+      "respondents": "7290",
+      "questions": "5",
+      "expected_time": "00:00:50",
+      "bot_time": "0:00:10"
+    },
+    {
+      "name": "Campus Activism",
+      "date_taken": "01/23/2019 03:04:44",
+      "points": "10",
+      "respondents": "7336",
+      "questions": "5",
+      "expected_time": "00:00:50",
+      "bot_time": "0:00:10"
+    },
+    {
+      "name": "9/04: Top Q's",
+      "date_taken": "01/23/2019 03:04:58",
+      "points": "10",
+      "respondents": "7661",
+      "questions": "6",
+      "expected_time": "00:01:00",
+      "bot_time": "0:00:11"
+    },
+    {
+      "name": "9/16: Top Q's",
+      "date_taken": "01/23/2019 03:05:31",
+      "points": "10",
+      "respondents": "6243",
+      "questions": "5",
+      "expected_time": "00:00:50",
+      "bot_time": "0:00:10"
+    },
+    {
+      "name": "Compared to Average",
+      "date_taken": "01/23/2019 03:05:43",
+      "points": "10",
+      "respondents": "7326",
+      "questions": "6",
+      "expected_time": "00:01:00",
+      "bot_time": "0:00:11"
+    },
+    {
+      "name": "10/01: Top Q's",
+      "date_taken": "01/23/2019 03:05:56",
+      "points": "10",
+      "respondents": "7409",
+      "questions": "5",
+      "expected_time": "00:00:50",
+      "bot_time": "0:00:10"
+    },
+    {
+      "name": "College Satisfaction",
+      "date_taken": "01/23/2019 03:06:10",
+      "points": "10",
+      "respondents": "6636",
+      "questions": "7",
+      "expected_time": "00:01:10",
+      "bot_time": "0:00:14"
+    },
+    {
+      "name": "9/14: Top Q's",
+      "date_taken": "01/23/2019 03:06:22",
+      "points": "10",
+      "respondents": "8383",
+      "questions": "5",
+      "expected_time": "00:00:50",
+      "bot_time": "0:00:10"
+    },
+    {
+      "name": "US Politics",
+      "date_taken": "01/23/2019 03:06:35",
+      "points": "10",
+      "respondents": "8360",
+      "questions": "6",
+      "expected_time": "00:01:00",
+      "bot_time": "0:00:11"
+    },
+    {
+      "name": "9/18: Top Q's",
+      "date_taken": "01/23/2019 03:06:47",
+      "points": "10",
+      "respondents": "8335",
+      "questions": "6",
+      "expected_time": "00:01:00",
+      "bot_time": "0:00:11"
+    },
+    {
+      "name": "Never Have I Ever",
+      "date_taken": "01/23/2019 03:06:59",
+      "points": "10",
+      "respondents": "8298",
+      "questions": "5",
+      "expected_time": "00:00:50",
+      "bot_time": "0:00:10"
+    },
+    {
+      "name": "9/19: Top Q's",
+      "date_taken": "01/23/2019 03:07:10",
+      "points": "10",
+      "respondents": "8257",
+      "questions": "5",
+      "expected_time": "00:00:50",
+      "bot_time": "0:00:10"
+    },
+    {
+      "name": "10/08: Top Q's",
+      "date_taken": "01/23/2019 03:07:23",
+      "points": "10",
+      "respondents": "8250",
+      "questions": "6",
+      "expected_time": "00:01:00",
+      "bot_time": "0:00:11"
+    },
+    {
+      "name": "Halloween Costumes",
+      "date_taken": "01/23/2019 03:07:42",
+      "points": "10",
+      "respondents": "8232",
+      "questions": "10",
+      "expected_time": "00:01:40",
+      "bot_time": "0:00:18"
+    },
+    {
+      "name": "10/05: Top Q's",
+      "date_taken": "01/23/2019 03:07:54",
+      "points": "10",
+      "respondents": "8197",
+      "questions": "5",
+      "expected_time": "00:00:50",
+      "bot_time": "0:00:11"
+    },
+    {
+      "name": "8/10: Top Q's",
+      "date_taken": "01/23/2019 03:08:07",
+      "points": "10",
+      "respondents": "8237",
+      "questions": "6",
+      "expected_time": "00:01:00",
+      "bot_time": "0:00:11"
+    },
+    {
+      "name": "10/05: Top Q's",
+      "date_taken": "01/23/2019 03:08:19",
+      "points": "10",
+      "respondents": "8197",
+      "questions": "5",
+      "expected_time": "00:00:50",
+      "bot_time": "0:00:10"
+    },
+    {
+      "name": "Never Have I Ever",
+      "date_taken": "01/23/2019 03:08:30",
+      "points": "10",
+      "respondents": "8178",
+      "questions": "5",
+      "expected_time": "00:00:50",
+      "bot_time": "0:00:10"
+    },
+    {
+      "name": "Would You Rather?",
+      "date_taken": "01/23/2019 03:08:42",
+      "points": "10",
+      "respondents": "8174",
+      "questions": "5",
+      "expected_time": "00:00:50",
+      "bot_time": "0:00:10"
+    },
+    {
+      "name": "Never Have I Ever...",
+      "date_taken": "01/23/2019 03:08:54",
+      "points": "10",
+      "respondents": "8144",
+      "questions": "5",
+      "expected_time": "00:00:50",
+      "bot_time": "0:00:10"
+    },
+    {
+      "name": "Would You Rather?",
+      "date_taken": "01/23/2019 03:09:05",
+      "points": "10",
+      "respondents": "8124",
+      "questions": "5",
+      "expected_time": "00:00:50",
+      "bot_time": "0:00:10"
+    },
+    {
+      "name": "9/25: Top Q's",
+      "date_taken": "01/23/2019 03:10:07",
+      "points": "10",
+      "respondents": "8124",
+      "questions": "5",
+      "expected_time": "00:00:50",
+      "bot_time": "0:00:11"
+    },
+    {
+      "name": "11/27: Top Q's",
+      "date_taken": "01/23/2019 03:10:19",
+      "points": "10",
+      "respondents": "8095",
+      "questions": "5",
+      "expected_time": "00:00:50",
+      "bot_time": "0:00:10"
+    },
+    {
+      "name": "9/12: Top Q's",
+      "date_taken": "01/23/2019 03:10:31",
+      "points": "10",
+      "respondents": "8037",
+      "questions": "5",
+      "expected_time": "00:00:50",
+      "bot_time": "0:00:10"
+    },
+    {
+      "name": "08/23: Top Q's",
+      "date_taken": "01/23/2019 03:10:44",
+      "points": "10",
+      "respondents": "8024",
+      "questions": "5",
+      "expected_time": "00:00:50",
+      "bot_time": "0:00:12"
+    },
+    {
+      "name": "9/29: Top Q's",
+      "date_taken": "01/23/2019 03:10:57",
+      "points": "10",
+      "respondents": "8020",
+      "questions": "5",
+      "expected_time": "00:00:50",
+      "bot_time": "0:00:12"
+    },
+    {
+      "name": "9/11: Top Q's",
+      "date_taken": "01/23/2019 03:11:21",
+      "points": "15",
+      "respondents": "8013",
+      "questions": "6",
+      "expected_time": "00:01:00",
+      "bot_time": "0:00:13"
+    },
+    {
+      "name": "Would You Rather?",
+      "date_taken": "01/23/2019 03:11:32",
+      "points": "10",
+      "respondents": "7937",
+      "questions": "5",
+      "expected_time": "00:00:50",
+      "bot_time": "0:00:10"
+    },
+    {
+      "name": "09/05: Top Q's",
+      "date_taken": "01/23/2019 03:11:44",
+      "points": "10",
+      "respondents": "7897",
+      "questions": "5",
+      "expected_time": "00:00:50",
+      "bot_time": "0:00:10"
+    },
+    {
+      "name": "12/12: Top Q's",
+      "date_taken": "01/23/2019 03:11:56",
+      "points": "10",
+      "respondents": "7878",
+      "questions": "5",
+      "expected_time": "00:00:50",
+      "bot_time": "0:00:10"
+    },
+    {
+      "name": "College Athletes",
+      "date_taken": "01/23/2019 03:12:08",
+      "points": "10",
+      "respondents": "7869",
+      "questions": "6",
+      "expected_time": "00:01:00",
+      "bot_time": "0:00:11"
+    },
+    {
+      "name": "10/23: Top Q's",
+      "date_taken": "01/23/2019 03:12:20",
+      "points": "10",
+      "respondents": "7863",
+      "questions": "5",
+      "expected_time": "00:00:50",
+      "bot_time": "0:00:10"
+    },
+    {
+      "name": "10/23: Top Q's",
+      "date_taken": "01/23/2019 03:12:32",
+      "points": "10",
+      "respondents": "7846",
+      "questions": "5",
+      "expected_time": "00:00:50",
+      "bot_time": "0:00:10"
+    },
+    {
+      "name": "10/30: Top Q's",
+      "date_taken": "01/23/2019 03:12:43",
+      "points": "10",
+      "respondents": "7834",
+      "questions": "5",
+      "expected_time": "00:00:50",
+      "bot_time": "0:00:10"
+    },
+    {
+      "name": "Climate Change",
+      "date_taken": "01/23/2019 03:12:55",
+      "points": "10",
+      "respondents": "7830",
+      "questions": "5",
+      "expected_time": "00:00:50",
+      "bot_time": "0:00:10"
+    },
+    {
+      "name": "Never Have I Ever",
+      "date_taken": "01/23/2019 03:13:06",
+      "points": "10",
+      "respondents": "7821",
+      "questions": "5",
+      "expected_time": "00:00:50",
+      "bot_time": "0:00:10"
+    },
+    {
+      "name": "9/25: Top Q's",
+      "date_taken": "01/23/2019 03:13:19",
+      "points": "10",
+      "respondents": "7789",
+      "questions": "5",
+      "expected_time": "00:00:50",
+      "bot_time": "0:00:11"
+    },
+    {
+      "name": "9/21: Top Q's",
+      "date_taken": "01/23/2019 03:13:31",
+      "points": "10",
+      "respondents": "7786",
+      "questions": "5",
+      "expected_time": "00:00:50",
+      "bot_time": "0:00:10"
+    },
+    {
+      "name": "8/26: Top Q's",
+      "date_taken": "01/23/2019 03:13:43",
+      "points": "10",
+      "respondents": "7763",
+      "questions": "5",
+      "expected_time": "00:00:50",
+      "bot_time": "0:00:10"
+    },
+    {
+      "name": "9/11: Top Q's",
+      "date_taken": "01/23/2019 03:13:56",
+      "points": "10",
+      "respondents": "7198",
+      "questions": "5",
+      "expected_time": "00:00:50",
+      "bot_time": "0:00:12"
+    },
+    {
+      "name": "12/03: Top Q's",
+      "date_taken": "01/23/2019 03:14:20",
+      "points": "10",
+      "respondents": "7300",
+      "questions": "6",
+      "expected_time": "00:01:00",
+      "bot_time": "0:00:12"
+    },
+    {
+      "name": "Halloween",
+      "date_taken": "01/23/2019 03:14:32",
+      "points": "10",
+      "respondents": "7195",
+      "questions": "6",
+      "expected_time": "00:01:00",
+      "bot_time": "0:00:10"
+    },
+    {
+      "name": "9/18: Top Q's",
+      "date_taken": "01/23/2019 03:15:18",
+      "points": "10",
+      "respondents": "7363",
+      "questions": "5",
+      "expected_time": "00:00:50",
+      "bot_time": "0:00:11"
+    },
+    {
+      "name": "9/29: Top Q's",
+      "date_taken": "01/23/2019 03:15:30",
+      "points": "10",
+      "respondents": "6843",
+      "questions": "5",
+      "expected_time": "00:00:50",
+      "bot_time": "0:00:10"
+    },
+    {
+      "name": "09/23/18: Dartmouth Top Questions",
+      "date_taken": "01/23/2019 03:15:59",
+      "points": "5",
+      "respondents": "214",
+      "questions": "3",
+      "expected_time": "00:00:30",
+      "bot_time": "0:00:27"
+    },
+    {
+      "name": "11/07: Top Q's",
+      "date_taken": "01/23/2019 03:16:11",
+      "points": "10",
+      "respondents": "7736",
+      "questions": "5",
+      "expected_time": "00:00:50",
+      "bot_time": "0:00:10"
+    },
+    {
+      "name": "11/02: Top Q's",
+      "date_taken": "01/23/2019 03:16:23",
+      "points": "10",
+      "respondents": "7732",
+      "questions": "5",
+      "expected_time": "00:00:50",
+      "bot_time": "0:00:10"
+    },
+    {
+      "name": "09/29/18: Dartmouth Top Questions",
+      "date_taken": "01/23/2019 03:16:43",
+      "points": "5",
+      "respondents": "210",
+      "questions": "3",
+      "expected_time": "00:00:30",
+      "bot_time": "0:00:08"
+    },
+    {
+      "name": "12/05: Top Q's",
+      "date_taken": "01/23/2019 03:16:55",
+      "points": "10",
+      "respondents": "7731",
+      "questions": "5",
+      "expected_time": "00:00:50",
+      "bot_time": "0:00:10"
+    },
+    {
+      "name": "8/9: Top Q's",
+      "date_taken": "01/23/2019 03:17:08",
+      "points": "10",
+      "respondents": "7725",
+      "questions": "6",
+      "expected_time": "00:01:00",
+      "bot_time": "0:00:13"
+    },
+    {
+      "name": "10/26: Top Q's",
+      "date_taken": "01/23/2019 03:17:20",
+      "points": "10",
+      "respondents": "7678",
+      "questions": "5",
+      "expected_time": "00:00:50",
+      "bot_time": "0:00:10"
+    },
+    {
+      "name": "9/04: Top Q's",
+      "date_taken": "01/23/2019 03:17:33",
+      "points": "10",
+      "respondents": "7661",
+      "questions": "6",
+      "expected_time": "00:01:00",
+      "bot_time": "0:00:11"
+    },
+    {
+      "name": "11/05: Top Q's",
+      "date_taken": "01/23/2019 03:17:44",
+      "points": "10",
+      "respondents": "7657",
+      "questions": "5",
+      "expected_time": "00:00:50",
+      "bot_time": "0:00:10"
+    },
+    {
+      "name": "11/05: Top Q's",
+      "date_taken": "01/23/2019 03:17:56",
+      "points": "10",
+      "respondents": "7657",
+      "questions": "5",
+      "expected_time": "00:00:50",
+      "bot_time": "0:00:10"
+    },
+    {
+      "name": "11/05: Top Q's",
+      "date_taken": "01/23/2019 03:18:08",
+      "points": "10",
+      "respondents": "7657",
+      "questions": "5",
+      "expected_time": "00:00:50",
+      "bot_time": "0:00:10"
+    },
+    {
+      "name": "Never Have I Ever",
+      "date_taken": "01/23/2019 03:18:19",
+      "points": "10",
+      "respondents": "7646",
+      "questions": "5",
+      "expected_time": "00:00:50",
+      "bot_time": "0:00:10"
+    },
+    {
+      "name": "10/04: Top Q's",
+      "date_taken": "01/23/2019 03:18:32",
+      "points": "10",
+      "respondents": "7607",
+      "questions": "6",
+      "expected_time": "00:01:00",
+      "bot_time": "0:00:11"
+    },
+    {
+      "name": "Political Spectrum",
+      "date_taken": "01/23/2019 03:18:44",
+      "points": "10",
+      "respondents": "7602",
+      "questions": "6",
+      "expected_time": "00:01:00",
+      "bot_time": "0:00:11"
+    },
+    {
+      "name": "9/04: Current Events",
+      "date_taken": "01/23/2019 03:18:57",
+      "points": "10",
+      "respondents": "7552",
+      "questions": "6",
+      "expected_time": "00:01:00",
+      "bot_time": "0:00:11"
+    },
+    {
+      "name": "The Freshman 15",
+      "date_taken": "01/23/2019 03:19:10",
+      "points": "10",
+      "respondents": "7543",
+      "questions": "5",
+      "expected_time": "00:00:50",
+      "bot_time": "0:00:11"
+    },
+    {
+      "name": "The Freshman 15",
+      "date_taken": "01/23/2019 03:19:21",
+      "points": "10",
+      "respondents": "7543",
+      "questions": "5",
+      "expected_time": "00:00:50",
+      "bot_time": "0:00:10"
+    },
+    {
+      "name": "10/17: Top Q's",
+      "date_taken": "01/23/2019 03:19:34",
+      "points": "10",
+      "respondents": "7542",
+      "questions": "5",
+      "expected_time": "00:00:50",
+      "bot_time": "0:00:12"
+    },
+    {
+      "name": "9/09: Top Q's",
+      "date_taken": "01/23/2019 03:19:47",
+      "points": "10",
+      "respondents": "7532",
+      "questions": "6",
+      "expected_time": "00:01:00",
+      "bot_time": "0:00:11"
+    },
+    {
+      "name": "9/30: Top Q's",
+      "date_taken": "01/23/2019 03:19:59",
+      "points": "10",
+      "respondents": "7522",
+      "questions": "5",
+      "expected_time": "00:00:50",
+      "bot_time": "0:00:10"
+    },
+    {
+      "name": "10/27: Top Q's",
+      "date_taken": "01/23/2019 03:20:12",
+      "points": "10",
+      "respondents": "7497",
+      "questions": "5",
+      "expected_time": "00:00:50",
+      "bot_time": "0:00:12"
+    },
+    {
+      "name": "10/04: Top Q's",
+      "date_taken": "01/23/2019 03:20:23",
+      "points": "10",
+      "respondents": "7467",
+      "questions": "5",
+      "expected_time": "00:00:50",
+      "bot_time": "0:00:10"
+    },
+    {
+      "name": "10/03: Top Q's",
+      "date_taken": "01/23/2019 03:20:35",
+      "points": "10",
+      "respondents": "7458",
+      "questions": "5",
+      "expected_time": "00:00:50",
+      "bot_time": "0:00:10"
+    },
+    {
+      "name": "9/06: Top Q's",
+      "date_taken": "01/23/2019 03:20:46",
+      "points": "10",
+      "respondents": "7410",
+      "questions": "5",
+      "expected_time": "00:00:50",
+      "bot_time": "0:00:10"
+    },
+    {
+      "name": "9/18: Top Q's",
+      "date_taken": "01/23/2019 03:20:58",
+      "points": "10",
+      "respondents": "7363",
+      "questions": "5",
+      "expected_time": "00:00:50",
+      "bot_time": "0:00:10"
+    },
+    {
+      "name": "10/03: Top Q's",
+      "date_taken": "01/23/2019 03:21:11",
+      "points": "10",
+      "respondents": "7355",
+      "questions": "5",
+      "expected_time": "00:00:50",
+      "bot_time": "0:00:12"
+    },
+    {
+      "name": "11/10: Top Q's",
+      "date_taken": "01/23/2019 03:21:24",
+      "points": "10",
+      "respondents": "7343",
+      "questions": "5",
+      "expected_time": "00:00:50",
+      "bot_time": "0:00:12"
+    },
+    {
+      "name": "10/29: Top Q's",
+      "date_taken": "01/23/2019 03:21:37",
+      "points": "10",
+      "respondents": "7106",
+      "questions": "5",
+      "expected_time": "00:00:50",
+      "bot_time": "0:00:11"
+    },
+    {
+      "name": "11/10: Top Q's",
+      "date_taken": "01/23/2019 03:21:49",
+      "points": "10",
+      "respondents": "7343",
+      "questions": "5",
+      "expected_time": "00:00:50",
+      "bot_time": "0:00:10"
+    },
+    {
+      "name": "12/15: Top Q's",
+      "date_taken": "01/23/2019 03:22:00",
+      "points": "10",
+      "respondents": "7336",
+      "questions": "5",
+      "expected_time": "00:00:50",
+      "bot_time": "0:00:10"
+    },
+    {
+      "name": "10/05: Top Q's",
+      "date_taken": "01/23/2019 03:22:12",
+      "points": "10",
+      "respondents": "7327",
+      "questions": "5",
+      "expected_time": "00:00:50",
+      "bot_time": "0:00:10"
+    },
+    {
+      "name": "Compared to Average",
+      "date_taken": "01/23/2019 03:22:24",
+      "points": "10",
+      "respondents": "7326",
+      "questions": "6",
+      "expected_time": "00:01:00",
+      "bot_time": "0:00:10"
+    },
+    {
+      "name": "Compared to Average",
+      "date_taken": "01/23/2019 03:22:36",
+      "points": "10",
+      "respondents": "7326",
+      "questions": "6",
+      "expected_time": "00:01:00",
+      "bot_time": "0:00:11"
+    },
+    {
+      "name": "10/15: Top Q's",
+      "date_taken": "01/23/2019 03:22:49",
+      "points": "10",
+      "respondents": "7319",
+      "questions": "5",
+      "expected_time": "00:00:50",
+      "bot_time": "0:00:11"
+    },
+    {
+      "name": "10/21: Top Q's",
+      "date_taken": "01/23/2019 03:23:01",
+      "points": "10",
+      "respondents": "7291",
+      "questions": "5",
+      "expected_time": "00:00:50",
+      "bot_time": "0:00:10"
+    },
+    {
+      "name": "10/21: Top Q's",
+      "date_taken": "01/23/2019 03:23:14",
+      "points": "10",
+      "respondents": "7291",
+      "questions": "5",
+      "expected_time": "00:00:50",
+      "bot_time": "0:00:12"
+    },
+    {
+      "name": "Moral Dilemmas",
+      "date_taken": "01/23/2019 03:23:34",
+      "points": "15",
+      "respondents": "7265",
+      "questions": "10",
+      "expected_time": "00:01:40",
+      "bot_time": "0:00:18"
+    },
+    {
+      "name": "9/14: Top Q's",
+      "date_taken": "01/23/2019 03:23:45",
+      "points": "10",
+      "respondents": "7262",
+      "questions": "5",
+      "expected_time": "00:00:50",
+      "bot_time": "0:00:10"
+    },
+    {
+      "name": "Going Out at Dartmouth",
+      "date_taken": "01/23/2019 03:24:15",
+      "points": "10",
+      "respondents": "202",
+      "questions": "10",
+      "expected_time": "00:01:40",
+      "bot_time": "0:00:18"
+    },
+    {
+      "name": "Paris Climate Agreement",
+      "date_taken": "01/23/2019 03:24:27",
+      "points": "10",
+      "respondents": "7232",
+      "questions": "5",
+      "expected_time": "00:00:50",
+      "bot_time": "0:00:10"
+    },
+    {
+      "name": "10/12/18: Top Questions",
+      "date_taken": "01/23/2019 03:24:38",
+      "points": "10",
+      "respondents": "7205",
+      "questions": "5",
+      "expected_time": "00:00:50",
+      "bot_time": "0:00:10"
+    },
+    {
+      "name": "10/22: Top Q's",
+      "date_taken": "01/23/2019 03:24:50",
+      "points": "10",
+      "respondents": "6043",
+      "questions": "5",
+      "expected_time": "00:00:50",
+      "bot_time": "0:00:10"
+    },
+    {
+      "name": "9/15: Top Q's",
+      "date_taken": "01/23/2019 03:25:01",
+      "points": "10",
+      "respondents": "7200",
+      "questions": "5",
+      "expected_time": "00:00:50",
+      "bot_time": "0:00:10"
+    },
+    {
+      "name": "11/17: Top Q's",
+      "date_taken": "01/23/2019 03:25:13",
+      "points": "10",
+      "respondents": "7197",
+      "questions": "5",
+      "expected_time": "00:00:50",
+      "bot_time": "0:00:10"
+    },
+    {
+      "name": "10/10: Top Q's",
+      "date_taken": "01/23/2019 03:25:35",
+      "points": "10",
+      "respondents": "7194",
+      "questions": "5",
+      "expected_time": "00:00:50",
+      "bot_time": "0:00:11"
+    },
+    {
+      "name": "09/13/18: Top Questions Dartmouth",
+      "date_taken": "01/23/2019 03:25:59",
+      "points": "10",
+      "respondents": "216",
+      "questions": "5",
+      "expected_time": "00:00:50",
+      "bot_time": "0:00:11"
+    },
+    {
+      "name": "10/08: Current Events",
+      "date_taken": "01/23/2019 03:26:09",
+      "points": "10",
+      "respondents": "7178",
+      "questions": "5",
+      "expected_time": "00:00:50",
+      "bot_time": "0:00:09"
+    },
+    {
+      "name": "10/08: Current Events",
+      "date_taken": "01/23/2019 03:26:21",
+      "points": "10",
+      "respondents": "7178",
+      "questions": "5",
+      "expected_time": "00:00:50",
+      "bot_time": "0:00:10"
+    },
+    {
+      "name": "11/09: Top Q's",
+      "date_taken": "01/23/2019 03:26:33",
+      "points": "10",
+      "respondents": "7160",
+      "questions": "5",
+      "expected_time": "00:00:50",
+      "bot_time": "0:00:10"
+    },
+    {
+      "name": "11/08: Top Q's",
+      "date_taken": "01/23/2019 03:26:47",
+      "points": "10",
+      "respondents": "7088",
+      "questions": "5",
+      "expected_time": "00:00:50",
+      "bot_time": "0:00:13"
+    },
+    {
+      "name": "9/30: Top Q's",
+      "date_taken": "01/23/2019 03:27:07",
+      "points": "10",
+      "respondents": "7030",
+      "questions": "6",
+      "expected_time": "00:01:00",
+      "bot_time": "0:00:18"
+    },
+    {
+      "name": "11/21: Top Q's",
+      "date_taken": "01/23/2019 03:27:30",
+      "points": "10",
+      "respondents": "7008",
+      "questions": "5",
+      "expected_time": "00:00:50",
+      "bot_time": "0:00:11"
+    },
+    {
+      "name": "9/30: Top Q's",
+      "date_taken": "01/23/2019 03:27:43",
+      "points": "10",
+      "respondents": "7030",
+      "questions": "6",
+      "expected_time": "00:01:00",
+      "bot_time": "0:00:11"
+    },
+    {
+      "name": "10/06: Top Q's",
+      "date_taken": "01/23/2019 03:27:59",
+      "points": "10",
+      "respondents": "6990",
+      "questions": "5",
+      "expected_time": "00:00:50",
+      "bot_time": "0:00:15"
+    },
+    {
+      "name": "09/20/18: Dartmouth Top Questions",
+      "date_taken": "01/23/2019 03:28:15",
+      "points": "5",
+      "respondents": "211",
+      "questions": "2",
+      "expected_time": "00:00:20",
+      "bot_time": "0:00:05"
+    },
+    {
+      "name": "10/06: Top Q's",
+      "date_taken": "01/23/2019 03:28:28",
+      "points": "10",
+      "respondents": "6990",
+      "questions": "5",
+      "expected_time": "00:00:50",
+      "bot_time": "0:00:11"
+    },
+    {
+      "name": "Space Quiz",
+      "date_taken": "01/23/2019 03:28:33",
+      "points": "10",
+      "respondents": "6937",
+      "questions": "6",
+      "expected_time": "00:01:00",
+      "bot_time": "0:00:04"
+    },
+    {
+      "name": "Space Quiz",
+      "date_taken": "01/23/2019 03:28:39",
+      "points": "10",
+      "respondents": "6937",
+      "questions": "6",
+      "expected_time": "00:01:00",
+      "bot_time": "0:00:04"
+    },
+    {
+      "name": "Space Quiz",
+      "date_taken": "01/23/2019 03:28:51",
+      "points": "10",
+      "respondents": "6937",
+      "questions": "6",
+      "expected_time": "00:01:00",
+      "bot_time": "0:00:11"
+    },
+    {
+      "name": "Judaism Quiz",
+      "date_taken": "01/23/2019 03:29:08",
+      "points": "10",
+      "respondents": "6705",
+      "questions": "7",
+      "expected_time": "00:01:10",
+      "bot_time": "0:00:15"
+    },
+    {
+      "name": "Affirmative Action",
+      "date_taken": "01/23/2019 03:29:21",
+      "points": "10",
+      "respondents": "6936",
+      "questions": "6",
+      "expected_time": "00:01:00",
+      "bot_time": "0:00:12"
+    },
+    {
+      "name": "Online Free Speech",
+      "date_taken": "01/23/2019 03:29:32",
+      "points": "10",
+      "respondents": "6898",
+      "questions": "5",
+      "expected_time": "00:00:50",
+      "bot_time": "0:00:10"
+    },
+    {
+      "name": "10/14: Top Q's",
+      "date_taken": "01/23/2019 03:29:49",
+      "points": "10",
+      "respondents": "6889",
+      "questions": "5",
+      "expected_time": "00:00:50",
+      "bot_time": "0:00:16"
+    },
+    {
+      "name": "9/13: Top Q's",
+      "date_taken": "01/23/2019 03:30:01",
+      "points": "10",
+      "respondents": "6782",
+      "questions": "5",
+      "expected_time": "00:00:50",
+      "bot_time": "0:00:10"
+    },
+    {
+      "name": "10/05/18: Dartmouth Top Questions",
+      "date_taken": "01/23/2019 03:30:53",
+      "points": "10",
+      "respondents": "223",
+      "questions": "7",
+      "expected_time": "00:01:10",
+      "bot_time": "0:00:14"
+    },
+    {
+      "name": "09/16/18: Top Questions Dartmouth",
+      "date_taken": "01/23/2019 03:31:15",
+      "points": "5",
+      "respondents": "205",
+      "questions": "5",
+      "expected_time": "00:00:50",
+      "bot_time": "0:00:10"
+    },
+    {
+      "name": "10/14: Top Q's",
+      "date_taken": "01/23/2019 03:31:27",
+      "points": "10",
+      "respondents": "6889",
+      "questions": "5",
+      "expected_time": "00:00:50",
+      "bot_time": "0:00:10"
+    },
+    {
+      "name": "Race Relations",
+      "date_taken": "01/23/2019 03:31:37",
+      "points": "10",
+      "respondents": "6704",
+      "questions": "7",
+      "expected_time": "00:01:10",
+      "bot_time": "0:00:09"
+    },
+    {
+      "name": "Ask Pulse Anything",
+      "date_taken": "01/23/2019 03:31:54",
+      "points": "10",
+      "respondents": "5005",
+      "questions": "1",
+      "expected_time": "00:00:10",
+      "bot_time": "0:00:04"
+    },
+    {
+      "name": "New Feature",
+      "date_taken": "01/23/2019 03:32:31",
+      "points": "10",
+      "respondents": "4844",
+      "questions": "10",
+      "expected_time": "00:01:40",
+      "bot_time": "0:00:25"
+    },
+    {
+      "name": "Race Relations",
+      "date_taken": "01/23/2019 03:32:57",
+      "points": "10",
+      "respondents": "6704",
+      "questions": "7",
+      "expected_time": "00:01:10",
+      "bot_time": "0:00:14"
+    },
+    {
+      "name": "9/13: Top Q's",
+      "date_taken": "01/23/2019 03:33:10",
+      "points": "10",
+      "respondents": "6644",
+      "questions": "5",
+      "expected_time": "00:00:50",
+      "bot_time": "0:00:12"
+    },
+    {
+      "name": "Divestment",
+      "date_taken": "01/23/2019 03:33:23",
+      "points": "10",
+      "respondents": "6129",
+      "questions": "6",
+      "expected_time": "00:01:00",
+      "bot_time": "0:00:10"
+    },
+    {
+      "name": "Divestment",
+      "date_taken": "01/23/2019 03:33:47",
+      "points": "10",
+      "respondents": "6129",
+      "questions": "6",
+      "expected_time": "00:01:00",
+      "bot_time": "0:00:12"
+    },
+    {
+      "name": "09/08/18: Top Questions",
+      "date_taken": "01/23/2019 03:33:59",
+      "points": "10",
+      "respondents": "6049",
+      "questions": "5",
+      "expected_time": "00:00:50",
+      "bot_time": "0:00:11"
+    },
+    {
+      "name": "9/13: Top Q's",
+      "date_taken": "01/23/2019 03:34:13",
+      "points": "10",
+      "respondents": "6644",
+      "questions": "5",
+      "expected_time": "00:00:50",
+      "bot_time": "0:00:12"
+    },
+    {
+      "name": "9/17: Top Q's",
+      "date_taken": "01/23/2019 03:34:48",
+      "points": "10",
+      "respondents": "6041",
+      "questions": "5",
+      "expected_time": "00:00:50",
+      "bot_time": "0:00:11"
+    },
+    {
+      "name": "10/13: Top Q's",
+      "date_taken": "01/23/2019 03:34:59",
+      "points": "10",
+      "respondents": "6006",
+      "questions": "5",
+      "expected_time": "00:00:50",
+      "bot_time": "0:00:08"
+    },
+    {
+      "name": "Greek Life ('21s)",
+      "date_taken": "01/23/2019 03:35:09",
+      "points": "5",
+      "respondents": "482",
+      "questions": "3",
+      "expected_time": "00:00:30",
+      "bot_time": "0:00:08"
+    },
+    {
+      "name": "09/06/18: Top Questions Dartmouth",
+      "date_taken": "01/23/2019 03:35:21",
+      "points": "10",
+      "respondents": "236",
+      "questions": "5",
+      "expected_time": "00:00:50",
+      "bot_time": "0:00:10"
+    },
+    {
+      "name": "10/13: Top Q's",
+      "date_taken": "01/23/2019 03:35:31",
+      "points": "10",
+      "respondents": "6006",
+      "questions": "5",
+      "expected_time": "00:00:50",
+      "bot_time": "0:00:08"
+    },
+    {
+      "name": "10/13: Top Q's",
+      "date_taken": "01/23/2019 03:35:44",
+      "points": "10",
+      "respondents": "6006",
+      "questions": "5",
+      "expected_time": "00:00:50",
+      "bot_time": "0:00:12"
+    },
+    {
+      "name": "09/22/18: Dartmouth Top Questions",
+      "date_taken": "01/23/2019 03:35:53",
+      "points": "5",
+      "respondents": "213",
+      "questions": "3",
+      "expected_time": "00:00:30",
+      "bot_time": "0:00:07"
+    },
+    {
+      "name": "Pulse Media",
+      "date_taken": "01/23/2019 03:36:13",
+      "points": "10",
+      "respondents": "5276",
+      "questions": "3",
+      "expected_time": "00:00:30",
+      "bot_time": "0:00:07"
+    },
+    {
+      "name": "09/14/18: Top Questions Dartmouth",
+      "date_taken": "01/23/2019 03:36:24",
+      "points": "10",
+      "respondents": "221",
+      "questions": "4",
+      "expected_time": "00:00:40",
+      "bot_time": "0:00:09"
+    },
+    {
+      "name": "09/23/18: Dartmouth Top Questions",
+      "date_taken": "01/23/2019 03:36:44",
+      "points": "5",
+      "respondents": "214",
+      "questions": "3",
+      "expected_time": "00:00:30",
+      "bot_time": "0:00:07"
+    },
+    {
+      "name": "09/27/18: Dartmouth Top Questions",
+      "date_taken": "01/23/2019 03:36:54",
+      "points": "5",
+      "respondents": "209",
+      "questions": "3",
+      "expected_time": "00:00:30",
+      "bot_time": "0:00:08"
+    },
+    {
+      "name": "09/18/18: Top Questions Dartmouth",
+      "date_taken": "01/23/2019 03:37:14",
+      "points": "5",
+      "respondents": "208",
+      "questions": "3",
+      "expected_time": "00:00:30",
+      "bot_time": "0:00:08"
     }
   ]
 }
