@@ -222,6 +222,7 @@ class Web_Functions():
 
         # scroll to top of window 
         driver.execute_script("scrollBy(0,250);")
+        Web_Functions.click(driver, question)
   
         # print out the current question 
         Web_Functions.wait_until_element_appears(driver, "question-text", wait_time=2)
