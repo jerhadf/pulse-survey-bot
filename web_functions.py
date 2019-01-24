@@ -28,11 +28,11 @@ class Web_Functions():
         return Web_Functions.redirect_to_page(driver, url)
 
     @staticmethod
-    def open_site(url): 
+    def open_site(url, user="selenium"): 
         ''' Using a folder to save cookies, create a Chrome webdriver and open the website''' 
         # use a user-data-dir folder to save cookies and login info 
         chrome_options = webdriver.ChromeOptions()
-        chrome_options.add_argument("user-data-dir=selenium") 
+        chrome_options.add_argument(f"user-data-dir={user}") 
         
         # create a driver
         driver = webdriver.Chrome(r"C:\chromedriver_win32\chromedriver.exe", options = chrome_options)
@@ -159,7 +159,7 @@ class Web_Functions():
         survey_time = survey_text[-1]
 
         # write these stats to a file to keep track
-        with open(r'tests\survey_stats\pulse_bot_stats.json', 'r') as fp:
+        with open(r'tests\survey_stats\pulse_bot_stats_2.json', 'r') as fp:
             bot_stats = json.load(fp)
         
         bot_stats["Total_Points_Accumulated"] += int(survey_points)
@@ -172,9 +172,9 @@ class Web_Functions():
             "expected_time" : f"00:{survey_time}",
             "bot_time" : str(timedelta(seconds=round(time_taken)))
         })
-        bot_stats["Total_Surveys_Taken"] += int(len(bot_stats["Surveys_Completed"]))
+        bot_stats["Total_Surveys_Taken"] = int(len(bot_stats["Surveys_Completed"]))
             
-        with open(r'tests\survey_stats\pulse_bot_stats.json', 'w') as fp:
+        with open(r'tests\survey_stats\pulse_bot_stats_2.json', 'w') as fp:
             json.dump(bot_stats, fp, indent=2)
     
     @staticmethod
@@ -230,8 +230,9 @@ class Web_Functions():
 
         # scroll to top of window 
         driver.execute_script("scrollBy(0,250);")
-        time.sleep(.1)
+        time.sleep(.3)
         Web_Functions.click(driver, question)
+        time.sleep(.5)
   
         # print out the current question 
         Web_Functions.wait_until_element_appears(driver, "question-text", wait_time=2)
@@ -249,7 +250,7 @@ class Web_Functions():
             num_boxes = driver.find_elements_by_id("numeric-input-box")
 
         print(f"# OPTION BOXES: {len(input_boxes)} # ANSWER BOXES: {len(answer_boxes)} # NUM BOXES: {len(num_boxes)}")
-        time.sleep(.2)
+        time.sleep(.3)
 
         # answer the question depending on the input type
         if answer_boxes: 
@@ -271,7 +272,7 @@ class Web_Functions():
         else: 
             print(f"New input type on question {question}!")
         
-        time.sleep(.5)
+        time.sleep(.3)
 
     @staticmethod
     def submit_survey(driver): 

@@ -6,7 +6,7 @@ from selenium.webdriver.common.by import By
 from web_functions import Web_Functions
 from selenium.webdriver.common.action_chains import ActionChains
 
-driver = Web_Functions.open_site('https://collegepulse.com/app/answer') 
+driver = Web_Functions.open_site('https://collegepulse.com/app/answer', user='peralta') 
 Web_Functions.open_surveys_page(driver)
 
 Web_Functions.wait_until_element_appears(driver, 'page-number ')

@@ -3,7 +3,7 @@ from selenium import webdriver
 from selenium.webdriver.common.by import By
 from web_functions import Web_Functions
 
-driver = Web_Functions.open_site('https://collegepulse.com/app/answer') 
+driver = Web_Functions.open_site('https://collegepulse.com/app/answer', user='peralta') 
 
 num_surveys = 300
 surveys_completed = 0 
@@ -12,8 +12,7 @@ question_answers = Web_Functions.generate_answers(75)
 while surveys_completed < num_surveys:
 
     # navigate to surveys page and sort by number of responses
-    if Web_Functions.open_surveys_page(driver): continue 
-    else: 
+    if not Web_Functions.open_surveys_page(driver): 
         print("No more surveys available! Quitting the bot")
         driver.quit()
         break
