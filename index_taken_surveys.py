@@ -44,7 +44,7 @@ for i in range(1, len(page_numbers) + 1):
         mobile_stats["names"].append(survey_text[4])
 
         # write these stats to a file to keep track
-    with open(r'tests\survey_stats\all_survey_stats.json', 'r') as fp:
+    with open(r'tests\all_survey_stats.json', 'r') as fp:
         all_survey_stats = json.load(fp)
     
     all_survey_stats["Total_Surveys"] += len(web) + len(mobile)
@@ -62,7 +62,7 @@ for i in range(1, len(page_numbers) + 1):
     [all_survey_stats["Web_Survey_List"].append(name) for name in web_stats["names"]]
     [all_survey_stats["Mobile_Survey_List"].append(name) for name in mobile_stats["names"]]
         
-    with open(r'tests\survey_stats\all_survey_stats.json', 'w') as fp:
+    with open(r'tests\all_survey_stats.json', 'w') as fp:
         json.dump(all_survey_stats, fp, indent=2)
 
     print(f"SURVEYS FOUND on PAGE {page_number.text}: WEB {len(web)} MOBILE {len(mobile)}")

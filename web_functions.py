@@ -72,16 +72,23 @@ class Web_Functions():
 
     @staticmethod 
     def open_surveys_page(driver): 
-        ''' Open the surveys page from the Pulse homepage'''
+        ''' 
+        Open the surveys page from the Pulse homepage
+        if No surveys are available, return False; else, True 
+        '''
         # verify that surveys page button appears, navigate to surveys page 
         Web_Functions.wait_until_element_appears(driver, "surveys", find_type = By.ID)
         surveys_page = driver.find_element_by_id("surveys")
         Web_Functions.click(driver, surveys_page)
 
         # click the button to sort surveys by # of responses (b/c more responses tends to == more points)
-        Web_Functions.wait_until_element_appears(driver, 'responses', find_type = By.ID)
-        sort_by_responses_btn = driver.find_element_by_id('responses')
-        Web_Functions.click(driver, sort_by_responses_btn)
+        responses = Web_Functions.wait_until_element_appears(driver, 'responses', find_type = By.ID)
+        if not responses: return False
+        else:
+            sort_by_responses_btn = driver.find_element_by_id('responses')
+            Web_Functions.click(driver, sort_by_responses_btn)
+            return True 
+
     
     @staticmethod 
     def find_available_surveys(driver, type="web"): 
@@ -152,7 +159,7 @@ class Web_Functions():
         survey_time = survey_text[-1]
 
         # write these stats to a file to keep track
-        with open(r'tests\pulse_bot_stats.json', 'r') as fp:
+        with open(r'tests\survey_stats\pulse_bot_stats.json', 'r') as fp:
             bot_stats = json.load(fp)
         
         bot_stats["Total_Points_Accumulated"] += int(survey_points)
@@ -165,8 +172,9 @@ class Web_Functions():
             "expected_time" : f"00:{survey_time}",
             "bot_time" : str(timedelta(seconds=round(time_taken)))
         })
+        bot_stats["Total_Surveys_Taken"] += int(len(bot_stats["Surveys_Completed"]))
             
-        with open(r'tests\pulse_bot_stats.json', 'w') as fp:
+        with open(r'tests\survey_stats\pulse_bot_stats.json', 'w') as fp:
             json.dump(bot_stats, fp, indent=2)
     
     @staticmethod

@@ -12,7 +12,11 @@ question_answers = Web_Functions.generate_answers(75)
 while surveys_completed < num_surveys:
 
     # navigate to surveys page and sort by number of responses
-    Web_Functions.open_surveys_page(driver)
+    if Web_Functions.open_surveys_page(driver): continue 
+    else: 
+        print("No more surveys available! Quitting the bot")
+        driver.quit()
+        break
 
     # find all available web surveys, open the first available one 
     web_surveys = Web_Functions.find_available_surveys(driver)

@@ -1,5 +1,6 @@
 {
-  "Total_Points_Accumulated": 7590,
+  "Total_Points_Accumulated": 7620,
+  "Total_Surveys_Taken": 621,
   "Surveys_Completed": [
     {
       "name": "What's Your Type?",
@@ -5234,6 +5235,33 @@
       "questions": "3",
       "expected_time": "00:00:30",
       "bot_time": "0:00:08"
+    },
+    {
+      "name": "01/23: Top Q's",
+      "date_taken": "01/23/2019 23:08:20",
+      "points": "10",
+      "respondents": "4088",
+      "questions": "5",
+      "expected_time": "00:00:50",
+      "bot_time": "0:00:11"
+    },
+    {
+      "name": "Color Perception",
+      "date_taken": "01/23/2019 23:08:33",
+      "points": "10",
+      "respondents": "6131",
+      "questions": "6",
+      "expected_time": "00:01:00",
+      "bot_time": "0:00:11"
+    },
+    {
+      "name": "01/23: Top Q's",
+      "date_taken": "01/23/2019 23:08:44",
+      "points": "10",
+      "respondents": "5857",
+      "questions": "5",
+      "expected_time": "00:00:50",
+      "bot_time": "0:00:10"
     }
   ]
 }
