@@ -3,7 +3,7 @@ from selenium import webdriver
 from selenium.webdriver.common.by import By
 from web_functions import Web_Functions
 
-driver = Web_Functions.open_site('https://collegepulse.com/app/answer', user='peralta') 
+driver = Web_Functions.open_site('https://collegepulse.com/app/answer', user='selenium') 
 
 num_surveys = 300
 surveys_completed = 0 

@@ -15,6 +15,9 @@ class Web_Functions():
     Also designed for automated survey taking on the Pulse website 
     ''' 
 
+    # class-level constants
+    STATS_FILE = r'tests\survey_stats\pulse_bot_stats.json'
+
     @staticmethod 
     def click(driver, element): 
         ''' Moves to the WebElement item and then clicks it'''
@@ -159,7 +162,7 @@ class Web_Functions():
         survey_time = survey_text[-1]
 
         # write these stats to a file to keep track
-        with open(r'tests\survey_stats\pulse_bot_stats_2.json', 'r') as fp:
+        with open(Web_Functions.STATS_FILE, 'r') as fp:
             bot_stats = json.load(fp)
         
         bot_stats["Total_Points_Accumulated"] += int(survey_points)
@@ -174,7 +177,7 @@ class Web_Functions():
         })
         bot_stats["Total_Surveys_Taken"] = int(len(bot_stats["Surveys_Completed"]))
             
-        with open(r'tests\survey_stats\pulse_bot_stats_2.json', 'w') as fp:
+        with open(Web_Functions.STATS_FILE, 'w') as fp:
             json.dump(bot_stats, fp, indent=2)
     
     @staticmethod
