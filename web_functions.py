@@ -16,12 +16,12 @@ class Web_Functions():
     Also designed for automated survey taking on the Pulse website 
     """
 
-    def __init__(self, driver, user="selenium"):
+    def __init__(self, user="selenium"):
         """
         Setup instance variables and class-level constants
         """
         self.STATS_FILE = r"tests\survey_stats\pulse_bot_stats.json"
-        self.driver = driver
+        self.driver = None # initialized to none, set in open_site
         self.user = user
 
     def click(self, element):
@@ -42,13 +42,13 @@ class Web_Functions():
             r"C:\chromedriver_win32\chromedriver.exe", options=chrome_options)
         return self.redirect_to_page(url)
 
-    def open_site(self, url, user="selenium"):
+    def open_site(self, url):
         """ 
         Using a folder to save cookies, create a Chrome webdriver and open the website
         """
         # use a user-data-dir folder to save cookies and login info
         chrome_options = webdriver.ChromeOptions()
-        chrome_options.add_argument(f"user-data-dir={user}")
+        chrome_options.add_argument(f"user-data-dir={self.user}")
 
         # create a self.driver
         self.driver = webdriver.Chrome(
@@ -335,7 +335,7 @@ class Web_Functions():
         self.click(final_submit_btn)
         self.check_if_too_fast()
         time.sleep(.5)
-        
+
         # navigate back to the homepage to ensure we go back to survey answering page
         self.wait_until_element_appears('icon-container')
         pulse_logo_btn = self.driver.find_element_by_class_name(

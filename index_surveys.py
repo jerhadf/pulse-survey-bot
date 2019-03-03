@@ -6,23 +6,25 @@ from selenium.webdriver.common.by import By
 from web_functions import Web_Functions
 from selenium.webdriver.common.action_chains import ActionChains
 
-driver = Web_Functions.open_site('https://collegepulse.com/app/answer', user='peralta') 
-Web_Functions.open_surveys_page(driver)
+pulse = Web_Functions(user="peralta")
 
-Web_Functions.wait_until_element_appears(driver, 'page-number ')
+driver = pulse.open_site('https://collegepulse.com/app/answer') 
+pulse.open_surveys_page()
+
+pulse.wait_until_element_appears('page-number ')
 page_numbers = driver.find_elements_by_class_name('page-number ')
 print(f"SURVEY PAGES FOUND: {len(page_numbers)}\n")
 time.sleep(5)
 
 for i in range(1, len(page_numbers) + 1): 
     # click page_number
-    Web_Functions.wait_until_element_appears(driver, str(i), By.ID)
+    pulse.wait_until_element_appears(driver, str(i), By.ID)
     page_number = driver.find_element_by_id(str(i))
     print(f"... clicking page {page_number.text} button ...")
-    Web_Functions.click(driver, page_number)
+    pulse.click(page_number)
     
     time.sleep(3)
-    surveys = Web_Functions.find_available_surveys(driver, type="all")
+    surveys = pulse.find_available_surveys(type="all")
     web = surveys[0]
     mobile = surveys[1]
     web_stats = {"points": 0, "respondents": 0, "time": "00:00:00", "names": []}
@@ -33,14 +35,14 @@ for i in range(1, len(page_numbers) + 1):
         print(f"WEB: {survey_text}")
         web_stats["points"] += int(survey_text[0])
         web_stats["respondents"] += int(survey_text[3])
-        web_stats["time"] = Web_Functions.add_times(web_stats['time'], survey_text[-1])
+        web_stats["time"] = pulse.add_times(web_stats['time'], survey_text[-1])
         web_stats["names"].append(survey_text[2])
     for survey in mobile: 
         survey_text = survey.text.split('\n')
         print(f"MOBILE: {survey_text}")
         mobile_stats["points"] += int(survey_text[2])
         mobile_stats["respondents"] += int(survey_text[5])
-        mobile_stats["time"] = Web_Functions.add_times(mobile_stats['time'], survey_text[-1])
+        mobile_stats["time"] = pulse.add_times(mobile_stats['time'], survey_text[-1])
         mobile_stats["names"].append(survey_text[4])
 
         # write these stats to a file to keep track
@@ -53,9 +55,9 @@ for i in range(1, len(page_numbers) + 1):
     all_survey_stats["Mobile_Points_Available"] += mobile_stats["points"]
     all_survey_stats["Web_Points_Available"] += web_stats["points"]
     all_survey_stats["Total_Points_Available"] += mobile_stats["points"] + web_stats["points"]
-    all_survey_stats["Web_Time_Expected"] = Web_Functions.add_times(all_survey_stats["Web_Time_Expected"], web_stats['time'])
-    all_survey_stats["Mobile_Time_Expected"] = Web_Functions.add_times(all_survey_stats["Mobile_Time_Expected"], mobile_stats['time'])
-    all_survey_stats["Total_Time_Expected"] = Web_Functions.add_times(all_survey_stats["Web_Time_Expected"], all_survey_stats["Mobile_Time_Expected"])
+    all_survey_stats["Web_Time_Expected"] = pulse.add_times(all_survey_stats["Web_Time_Expected"], web_stats['time'])
+    all_survey_stats["Mobile_Time_Expected"] = pulse.add_times(all_survey_stats["Mobile_Time_Expected"], mobile_stats['time'])
+    all_survey_stats["Total_Time_Expected"] = pulse.add_times(all_survey_stats["Web_Time_Expected"], all_survey_stats["Mobile_Time_Expected"])
     all_survey_stats["Web_Total_Respondents"] += web_stats["respondents"]
     all_survey_stats["Mobile_Total_Respondents"] += mobile_stats["respondents"]
     all_survey_stats["Total_Respondents"] += mobile_stats["respondents"] + web_stats["respondents"]
