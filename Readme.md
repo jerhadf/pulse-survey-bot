@@ -8,6 +8,12 @@
 
 **Automating the Web with Selenium (blog post)**: https://irwinkwan.com/2013/04/05/automating-the-web-with-selenium-complete-tasks-automatically-and-write-test-cases/
 
+## Demo
+
+Here's a quick video demonstration of the bot in action. 
+
+https://app.hyfy.io/v/abyqlaxOqlo/
+
 ## Stats
 These are underestimates, as I started running the bot before I set up the stats-tracking and saving part. 
 
