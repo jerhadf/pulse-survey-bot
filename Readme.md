@@ -12,5 +12,7 @@
 These are underestimates, as I started running the bot before I set up the stats-tracking and saving part. 
 
 **Total Pulse points accumulated (2 different accounts)**: 17160
+
 **Total Pulse surveys taken**: 1421 
+
 **Shortest time taken on a single survey**: 10 seconds (expected time 50 seconds)
